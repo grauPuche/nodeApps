@@ -1,0 +1,22 @@
+{
+  "name": "www.grrrau.co",
+  "version": "1.0.0",
+  "description": "requires for a the intro port @ grrrau.co",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grauPuche/nodeApps/tree/master/www.grrrau.co"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "grau Puche",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
