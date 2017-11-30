@@ -1,0 +1,22 @@
+{
+  "name": "node-apps",
+  "version": "1.0.0",
+  "description": "recopilation of node.js applications hosted at [grrrau.co](http://grrrau.co/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grauPuche/nodeApps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grauPuche/nodeApps/issues"
+  },
+  "homepage": "https://github.com/grauPuche/nodeApps#readme",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}

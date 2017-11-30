@@ -1,0 +1,89 @@
+#wrapper{
+	position:fixed !important;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-color: #f0f0f0;
+	font-family: 'Nunito', sans-serif;
+}
+
+.msgs{
+	height: 80%;
+	width: 66%;
+	margin: auto;
+	margin-top: 10%;
+	background-color: red;
+	background-color: #f0f0f0;	
+	color: #f0f0f0;
+}
+
+.sentMsgs{
+	/* background-color: blue; */
+	height: 85%;
+	overflow: hidden;
+}
+
+.input{
+	/* background-color: green; */
+	height: 15%;
+}
+
+.bigMsg{
+	margin: 10px;
+	margin-top: 45px;
+	border-radius: 25px;
+    background: #8539a8;
+    padding: 20px; 
+	min-height: 40px;
+	font-size: 25px;
+	display:inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 23px 0 rgba(0, 0, 0, 0.19);
+}
+
+.smallMsg{
+	margin: 10px;
+	border-radius: 25px;
+    background: #aa5cce;
+    padding: 20px; 
+	min-height: 23px;
+	font-size: 15px;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* .smallBox{
+	background-color: blue;
+}
+.bigBox{
+	background-color: blue;
+} */
+
+/* .form{
+	width: 80%;
+	background-color: peru;
+} */
+
+/* .button{
+	width: 20%;
+} */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    /* -webkit-transition: 0.5s; */
+    /* transition: 0.5s; */
+	outline: none;
+	border-radius: 25px;
+	font-size: 20px;
+	font-family: 'Nunito', sans-serif;
+}
+
+input[type=text]:focus {
+	transition: 0.5s;
+    border: 3px solid #555;
+}
