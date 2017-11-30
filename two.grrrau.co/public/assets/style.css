@@ -17,6 +17,14 @@
 	/* opacity:0.5; */
 }
 
+#remote {
+	height: 100%;
+	position: relative;
+	right: 840px;
+	transform: rotateY(180deg);
+	/* opacity:0.5; */
+}
+
 .msgs {
 	height: 80%;
 	width: 66%;
