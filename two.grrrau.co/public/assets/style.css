@@ -22,7 +22,7 @@
 .sentMsgs{
 	/* background-color: blue; */
 	height: 85%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .input{
