@@ -48,3 +48,11 @@ function handleError(error) {
 
 navigator.mediaDevices.getUserMedia(constraints).
 then(handleSuccess).catch(handleError);
+
+var socket = io();
+
+socket.on('new guess', function(guess){
+	console.log(guess);	
+  $('.givenGuess').css('display','inline')
+  $('.givenGuess').html(guess)
+});
