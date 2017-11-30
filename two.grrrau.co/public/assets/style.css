@@ -12,7 +12,7 @@
 #video {
 	height: 75%;
 	position: relative;
-	right: 840;
+	right: 476px;
 	transform: rotateY(180deg);
 	/* opacity:0.5; */
 }
@@ -42,6 +42,7 @@
 	margin: 10px;
 	margin-top: 45px;
 	border-radius: 25px;
+	border-bottom-left-radius: 0;
 	background: #8539a8;
 	padding: 20px;
 	min-height: 60px;
@@ -53,6 +54,7 @@
 .smallMsg {
 	margin: 10px;
 	border-radius: 25px;
+	border-bottom-left-radius: 0;
 	background: #aa5cce;
 	padding: 20px;
 	min-height: 47px;
