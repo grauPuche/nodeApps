@@ -9,6 +9,14 @@
 	font-family: 'Nunito', sans-serif;
 }
 
+#video{
+	height: 100%;
+	position: relative;
+	right: 950;
+	transform: rotateY(180deg);
+	
+}
+
 .msgs{
 	height: 80%;
 	width: 66%;
