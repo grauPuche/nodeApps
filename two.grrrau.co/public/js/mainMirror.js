@@ -37,4 +37,4 @@ socket.on('new guess', function (guess) {
   $('.givenGuess').html(guess)
 });
 
-var video_out = document.getElementById("vid-box");
+
