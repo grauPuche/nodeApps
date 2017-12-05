@@ -6,8 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-  <script src="https://cdn.pubnub.com/pubnub-3.7.14.min.js"></script>
-  <script src="http://cdn.pubnub.com/webrtc/webrtc.js"></script>
   <!-- <script src="js/mainMirror.js"></script> -->
 </head>
 
@@ -62,11 +60,21 @@
   </div>
   </div>
 
+  <div style="display:none;">
+      <label>Your ID:</label><br/>
+      <textarea id="yourId"></textarea><br/>
+      <label>Other ID:</label><br/>
+      <textarea id="otherId"></textarea>
+      <button id="connect">connect</button><br/>
+
+      <label>Enter Message:</label><br/>
+      <textarea id="yourMessage"></textarea>
+      <button id="send">send</button>
+      <pre id="messages"></pre>
+  </div>
 
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/mainMirror.js"></script>
-  <script src="js/mainLive.js"></script>
-
 </body>
 
 </html>
