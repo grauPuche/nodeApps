@@ -1,3 +1,13 @@
+var peer = new Peer({key: 'gx953psgv62prpb9'});
+peer.on('open', function(id) {
+	console.log('My peer ID is: ' + id);
+  });
+  var conn = peer.connect('dest-peer-id');
+
+
+
+
+
 // var vid1 = document.getElementById("video");
 // var vid2 = document.getElementById("remote");
 
