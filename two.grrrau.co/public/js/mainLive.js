@@ -3,7 +3,7 @@ var peer = new Peer({key: 'gx953psgv62prpb9'});
 var video = document.getElementById('video');
 var socket = io.connect();
 
-io.on('id', function(id){
+socket.on('id', function(id){
 	console.log('the id is '+ id)
 	var conn = peer.connect(id);
 	console.log('connected!')
