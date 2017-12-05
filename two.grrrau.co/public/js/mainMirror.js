@@ -7,10 +7,7 @@ socket.on('connect', function () {
   console.log("Connected");
 });
 
-socket.on('image', function (data) {
-  console.log("Got image");
-  $('<img>').attr('src', data).appendTo('#mosaic');
-});
+var peer = new Peer({key: 'gx953psgv62prpb9'});
 
 var constraints = {
   audio: false,
@@ -37,4 +34,8 @@ socket.on('new guess', function (guess) {
   $('.givenGuess').html(guess)
 });
 
-
+peer.on('open', function(id) {
+  console.log('My peer ID is: ' + id);
+  socket.emit('id', id)
+  });
+  var conn = peer.connect('dest-peer-id');

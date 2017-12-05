@@ -1,12 +1,13 @@
 var peer = new Peer({key: 'gx953psgv62prpb9'});
-peer.on('open', function(id) {
-	console.log('My peer ID is: ' + id);
-  });
-  var conn = peer.connect('dest-peer-id');
 
+var video = document.getElementById('video');
+var socket = io.connect();
 
-
-
+io.on('id', function(id){
+	console.log('the id is '+ id)
+	var conn = peer.connect(id);
+	console.log('connected!')
+});
 
 // var vid1 = document.getElementById("video");
 // var vid2 = document.getElementById("remote");
