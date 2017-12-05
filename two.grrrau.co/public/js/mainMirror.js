@@ -7,7 +7,9 @@ socket.on('connect', function () {
   console.log("Connected");
 });
 
-var peer = new Peer({key: 'gx953psgv62prpb9'});
+var peer = new Peer({
+  key: 'gx953psgv62prpb9'
+});
 
 var constraints = {
   audio: false,
@@ -34,8 +36,9 @@ socket.on('new guess', function (guess) {
   $('.givenGuess').html(guess)
 });
 
-peer.on('open', function(id) {
-  console.log('My peer ID is: ' + id);
-  socket.emit('id', id)
-  });
-  var conn = peer.connect('dest-peer-id');
+peer.on('open', function (id) {
+  console.log('peerId is: ' + id);
+  socket.emit('peerId', id)
+  console.log('peerId send!')
+});
+

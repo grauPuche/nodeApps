@@ -26,8 +26,9 @@ io.on('connection', function (socket) {
 		console.log('new guess: '+ guess);
 		io.emit('new guess', guess);
 	});
-	socket.on('id', function(id){
+	socket.on('peerId', function(id){
+		
+		io.emit('peerId', id);
 		console.log('id is '+ id);
-		io.emit('is', id);
 	});
 });

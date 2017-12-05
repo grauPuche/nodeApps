@@ -3,11 +3,17 @@ var peer = new Peer({key: 'gx953psgv62prpb9'});
 var video = document.getElementById('video');
 var socket = io.connect();
 
-socket.on('id', function(id){
-	console.log('the id is '+ id)
+socket.on('connect', function () {
+	console.log("Connected");
+  });
+
+socket.on('peerId', function(id){
+	console.log('peerId is '+ id)
 	var conn = peer.connect(id);
-	console.log('connected!')
+	console.log('peers connected!')
 });
+
+
 
 // var vid1 = document.getElementById("video");
 // var vid2 = document.getElementById("remote");
