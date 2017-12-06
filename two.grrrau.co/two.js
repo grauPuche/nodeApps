@@ -26,9 +26,14 @@ io.on('connection', function (socket) {
 		console.log('new guess: '+ guess);
 		io.emit('new guess', guess);
 	});
-	socket.on('peerId', function(id){
+	socket.on('liveID', function(id){
 		
-		io.emit('peerId', id);
+		io.emit('liveID', id);
+		console.log('liveID is '+ id);
+	});
+	socket.on('mirrorID', function(id){
+		
+		io.emit('mirrorID', id);
 		console.log('id is '+ id);
 	});
 });
