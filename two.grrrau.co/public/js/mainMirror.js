@@ -47,6 +47,11 @@ var video = document.getElementById('video');
 
 var socket = io.connect();
 
+var constraints = {
+  audio: false,
+  video: true
+};
+
 navigator.mediaDevices.getUserMedia(constraints).
 then(handleSuccess).catch(handleError);
 
