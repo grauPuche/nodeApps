@@ -4,7 +4,7 @@ var video = document.getElementById('video');
 var socket = io.connect();
 
 socket.on('connect', function () {
-  console.log("Connected");
+  console.log("socket connected");
 });
 
 var peer = new Peer({
@@ -21,12 +21,24 @@ function handleSuccess(stream) {
   video.srcObject = stream;
 }
 
+navigator.mediaDevices.getUserMedia(constraints).
+then(handleSuccess).catch(handleError);
+
+socket.on('mirrorID', function (id) {
+	console.log('mirrorID is ' + id)
+	var call = peer.call(id,stream);
+	console.log('mirrorID connected!')
+});
+
+peer.on('open', function (id) {
+	console.log('peerId is: ' + id);
+	socket.emit('peerId', id)
+	console.log('peerId send!')
+  });
+
 function handleError(error) {
   console.log('navigator.getUserMedia error: ', error);
 }
-
-navigator.mediaDevices.getUserMedia(constraints).
-then(handleSuccess).catch(handleError);
 
 var socket = io();
 
@@ -35,10 +47,3 @@ socket.on('new guess', function (guess) {
   $('.givenGuess').css('display', 'inline')
   $('.givenGuess').html(guess)
 });
-
-peer.on('open', function (id) {
-  console.log('peerId is: ' + id);
-  socket.emit('peerId', id)
-  console.log('peerId send!')
-});
-
