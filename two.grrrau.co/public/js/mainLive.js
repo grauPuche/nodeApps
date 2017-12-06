@@ -1,7 +1,6 @@
 'use strict';
 
-var video = document.getElementById('video1');
-var video = document.getElementById('video1');
+var video = document.getElementById('video');
 
 var socket = io.connect();
 
