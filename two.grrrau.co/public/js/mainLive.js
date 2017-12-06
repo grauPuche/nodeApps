@@ -1,17 +1,18 @@
+
 'use strict';
 
-var video = document.getElementById('video');
+var video = document.getElementById('remote');
 
 var socket = io.connect();
 
 function handleSuccess(LOCAL) {
-	window.LOCAL = LOCAL; // make stream available to browser console
-	// video.srcObject = LOCAL;
+  window.LOCAL = LOCAL; // make stream available to browser console
+  //video.srcObject = LOCAL;
 }
 
 var constraints = {
-	audio: false,
-	video: true
+  audio: false,
+  video: true
 };
 
 navigator.mediaDevices.getUserMedia(constraints).
@@ -30,26 +31,24 @@ var peer = new Peer({
 });
 
 peer.on('open', function (lID) {
-	console.log('liveID is: ' + lID);
-	socket.emit('liveID', lID)
-	console.log('liveID send!')
+	console.log('mirrorID is: ' + lID);
+	socket.emit('mirrorID', lID)
+	console.log('mirrorID send!')
 });
 
-socket.on('mirrorID', function (mID) {
-	console.log('mirrorID is ' + mID)
+socket.on('liveID', function (mID) {
+	console.log('liveID is ' + mID)
 	var call = peer.call(mID, stream);
-	console.log('mirrorID connected!')
+	console.log('liveID connected!')
 });
 
 peer.on('call', function (call) {
 	// Answer the call automatically (instead of prompting user) for demo purposes
 	call.answer(window.localStream);
-	console.log('answered!')
-});
-
-call.on('stream', function (stream) {
-	// `stream` is the MediaStream of the remote peer.
-	// Here you'd add it to an HTML video/canvas element.
-	video.srcObject = stream;
-
+  console.log('answered!')
+  call.on('stream', function (stream) {
+    // `stream` is the MediaStream of the remote peer.
+    // Here you'd add it to an HTML video/canvas element.
+    video.srcObject = stream;
+  });
 });
