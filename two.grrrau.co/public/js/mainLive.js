@@ -4,10 +4,15 @@ var video = document.getElementById('video');
 
 var socket = io.connect();
 
+function handleSuccess(LOCAL) {
+	window.LOCAL = LOCAL; // make stream available to browser console
+	video.srcObject = LOCAL;
+}
+
 var constraints = {
 	audio: false,
 	video: true
-  };
+};
 
 navigator.mediaDevices.getUserMedia(constraints).
 then(handleSuccess).catch(handleError);
