@@ -5,6 +5,13 @@ var video = document.getElementById('video1');
 
 var socket = io.connect();
 
+navigator.mediaDevices.getUserMedia(constraints).
+then(handleSuccess).catch(handleError);
+
+function handleError(error) {
+	console.log('navigator.getUserMedia error: ', error);
+}
+
 socket.on('connect', function () {
 	console.log("socket connected");
 });
@@ -37,8 +44,3 @@ call.on('stream', function (stream) {
 	video.srcObject = stream;
 
 });
-
-
-
-navigator.mediaDevices.getUserMedia(constraints).
-then(handleSuccess).catch(handleError);
