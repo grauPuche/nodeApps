@@ -54,7 +54,7 @@ var socket = io.connect();
 
 function handleSuccess(LOCAL) {
 	window.LOCAL = LOCAL; // make stream available to browser console
-	// video.srcObject = LOCAL;
+	video.srcObject = LOCAL;
 }
 
 var constraints = {
