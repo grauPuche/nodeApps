@@ -26,8 +26,9 @@ socket.on('connect', function () {
 	console.log("socket connected");
 });
 
-var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/public'});
-
+var peer = new Peer('remote',{host: 'localhost', port: 9000, path: '/peer'});
+//online 
+//var peer = new Peer('remote',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
 peer.on('open', function (lID) {
 	console.log('mirrorID is: ' + lID);
