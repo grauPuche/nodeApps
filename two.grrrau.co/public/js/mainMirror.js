@@ -73,9 +73,7 @@ socket.on('connect', function () {
 	console.log("socket connected");
 });
 
-var peer = new Peer({
-	key: 'gx953psgv62prpb9'
-});
+var peer = new Peer('remote',{host: 'localhost', port: 9000, path: '/public'});
 
 peer.on('open', function (lID) {
 	console.log('liveID is: ' + lID);

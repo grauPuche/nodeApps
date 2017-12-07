@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/grauPuche/nodeApps#readme",
   "dependencies": {
+    "peer": "^0.2.8",
     "socket.io": "^2.0.4"
   }
 }
