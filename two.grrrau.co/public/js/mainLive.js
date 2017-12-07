@@ -26,6 +26,7 @@ socket.on('connect', function () {
 	console.log("socket connected");
 });
 
+//local
 var peer = new Peer('remote',{host: 'localhost', port: 9000, path: '/peer'});
 //online 
 //var peer = new Peer('remote',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
