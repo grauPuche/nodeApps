@@ -26,7 +26,7 @@ socket.on('connect', function () {
 	console.log("socket connected");
 });
 
-var peer = new Peer('local',{host: '174.138.59.1', port: 9000, path: '/public'});
+var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/public'});
 
 
 peer.on('open', function (lID) {
