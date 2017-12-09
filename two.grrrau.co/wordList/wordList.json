@@ -1,151 +1,627 @@
 {
-"Airplane": ["airplane","plane","aircraft", "airliner"],
-"Ears": ["ears","ear"],
-"Piano": ["piano","grand piano","keyboard"],
-"Angry": ["angry","annoyed","heated"],
-"Elephant": ["elephant","dumbo"],
-"Pinch": ["pinch"],
-"Baby": ["baby","child","toddler"],
-"Fish": ["fish","fishing"],
-"Reach": ["reach"],
-"Ball": ["ball","sphere"],
-"Flick": ["flick","film","movie"],
-"Remote": ["remote","tv remote"],
-"Baseball": [],
-"Football": [],
-"Roll": [],
-"Basketball": [],
-"Fork": [],
-"Sad": [],
-"Bounce": [],
-"Giggle": [],
-"Scissors": [],
-"Cat": ["Cat", "kitty", "cats", "kittie"],
-"Golf": [],
-"Skip": [],
-"Chicken": [],
-"Guitar": [],
-"Sneeze": [],
-"Chimpanzee": [],
-"Hammer": [],
-"Spin": [],
-"Clap": [],
-"Happy": [],
-"Spoon": [],
-"Cough": [],
-"Horns": [],
-"Stomp": [],
-"Cry": [],
-"Joke": [],
-"Stop": [],
-"Dog": [],
-"Mime": [],
-"Tail": [],
-"Drink": [],
-"Penguin": [],
-"Toothbrush": [],
-"Drums": [],
-"Phone": [],
-"Wiggle": [],
-"Duck": [],
-"Photographer": [],
-"Archer": [],
-"Ghost": [],
-"Rock star": [],
-"Balance beam": [],
-"Haircut": [],
-"Shoelaces": [],
-"Ballet": [],
-"Halo": [],
-"Sick": [],
-"Balloon": [],
-"Hiccup": [],
-"Singer": [],
-"Banana peel": [],
-"Hot dog": [],
-"Skateboard": [],
-"Book": [],
-"Hungry": [],
-"Slippery": [],
-"Braces": [],
-"Hurt": [],
-"Soccer": [],
-"Button": [],
-"Ice skating": [],
-"Strong": [],
-"Car": [],
-"Karate": [],
-"Stubbed toe": [],
-"Cheers": [],
-"Ladder": [],
-"Sunshine": [],
-"Clown": [],
-"Light bulb:": [],
-"Surprise": [],
-"Dinosaur": [],
-"Limbo": [],
-"Swing": [],
-"Disco": [],
-"Macarena": [],
-"Sword": [],
-"Dizzy": [],
-"Paint": [],
-"Tap dance": [],
-"Fart": [],
-"Pirate": [],
-"Wheelbarrow": [],
-"Fishing": [],
-"Read": [],
-"Wizard of Oz": [],
-"Gallop": [],
-"River dance": [],
-"Birthday": [],
-"Hedgehog": [],
-"Pizza": [],
-"Blanket": [],
-"Helicopter": [],
-"President": [],
-"Bright": [],
-"Hurricane": [],
-"Rainbow": [],
-"Bump": [],
-"Kite": [],
-"Rollercoaster": [],
-"Christmas": [],
-"Light": [],
-"Shadow": [],
-"Coffee": [],
-"Magic": [],
-"Shopping": [],
-"Cradle": [],
-"Makeup": [],
-"Shuffle": [],
-"Deer": [],
-"Marriage": [],
-"Slice": [],
-"Drool": [],
-"Mash": [],
-"Slip n’ slide": [],
-"Measure": [],
-"Smear": [],
-"Excitement": [],
-"Mirror": [],
-"Spider": [],
-"Fight Club": [],
-"Monster": [],
-"The Lion King": [],
-"Firefighter": [],
-"Motorcycle": [],
-"Trampoline": [],
-"Flashlight": [],
-"Nightmare": [],
-"Waterfall": [],
-"Garden": [],
-"Nosey": [],
-"Window": [],
-"Giraffe": [],
-"Overwhelmed": [],
-"Yo-yo": [],
-"Heavy": [],
-"Pancakes": []
-}
+	"words": [
+	  {
+		"id": 1,
+		"word": "airplane",
+		"synonym": "aircraft"
+	  },
+	  {
+		"id": 2,
+		"word": "ears",
+		"synonym": "ear"
+	  },
+	  {
+		"id": 3,
+		"word": "piano",
+		"synonym": [
+		  "keyboard",
+		  "grand piano"
+		]
+	  },
+	  {
+		"id": 4,
+		"word": "angry",
+		"synonym": "mad"
+	  },
+	  {
+		"id": 5,
+		"word": "elephant",
+		"synonym": "elephant"
+	  },
+	  {
+		"id": 6,
+		"word": "pinch",
+		"synonym": "pinch"
+	  },
+	  {
+		"id": 7,
+		"word": "baby",
+		"synonym": "toddler"
+	  },
+	  {
+		"id": 8,
+		"word": "fish",
+		"synonym": "fish"
+	  },
+	  {
+		"id": 9,
+		"word": "reach",
+		"synonym": "reach"
+	  },
+	  {
+		"id": 10,
+		"word": "ball",
+		"synonym": "sphere"
+	  },
+	  {
+		"id": 11,
+		"word": "flick",
+		"synonym": "movie"
+	  },
+	  {
+		"id": 12,
+		"word": "remote",
+		"synonym": "tv remote"
+	  },
+	  {
+		"id": 13,
+		"word": "baseball",
+		"synonym": "ball"
+	  },
+	  {
+		"id": 14,
+		"word": "football",
+		"synonym": "soccer"
+	  },
+	  {
+		"id": 15,
+		"word": "roll",
+		"synonym": "barrell roll"
+	  },
+	  {
+		"id": 16,
+		"word": "basketball",
+		"synonym": "ball"
+	  },
+	  {
+		"id": 17,
+		"word": "fork",
+		"synonym": "trident"
+	  },
+	  {
+		"id": 18,
+		"word": "sad",
+		"synonym": "depressed"
+	  },
+	  {
+		"id": 19,
+		"word": "bounce",
+		"synonym": "bouncer"
+	  },
+	  {
+		"id": 20,
+		"word": "giggle",
+		"synonym": "giggleepuff"
+	  },
+	  {
+		"id": 21,
+		"word": "scissors"
+	  },
+	  {
+		"id": 22,
+		"word": "cat"
+	  },
+	  {
+		"id": 23,
+		"word": "golf"
+	  },
+	  {
+		"id": 24,
+		"word": "skip"
+	  },
+	  {
+		"id": 25,
+		"word": "chicken"
+	  },
+	  {
+		"id": 26,
+		"word": "guitar"
+	  },
+	  {
+		"id": 27,
+		"word": "sneeze"
+	  },
+	  {
+		"id": 28,
+		"word": "chimpanzee"
+	  },
+	  {
+		"id": 29,
+		"word": "hammer"
+	  },
+	  {
+		"id": 30,
+		"word": "spin"
+	  },
+	  {
+		"id": 31,
+		"word": "clap"
+	  },
+	  {
+		"id": 32,
+		"word": "happy"
+	  },
+	  {
+		"id": 33,
+		"word": "spoon"
+	  },
+	  {
+		"id": 34,
+		"word": "cough"
+	  },
+	  {
+		"id": 35,
+		"word": "horns"
+	  },
+	  {
+		"id": 36,
+		"word": "stomp"
+	  },
+	  {
+		"id": 37,
+		"word": "cry"
+	  },
+	  {
+		"id": 38,
+		"word": "joke"
+	  },
+	  {
+		"id": 39,
+		"word": "stop"
+	  },
+	  {
+		"id": 40,
+		"word": "dog"
+	  },
+	  {
+		"id": 41,
+		"word": "mime"
+	  },
+	  {
+		"id": 42,
+		"word": "tail"
+	  },
+	  {
+		"id": 43,
+		"word": "drink"
+	  },
+	  {
+		"id": 44,
+		"word": "penguin"
+	  },
+	  {
+		"id": 45,
+		"word": "toothbrush"
+	  },
+	  {
+		"id": 46,
+		"word": "drums"
+	  },
+	  {
+		"id": 47,
+		"word": "phone"
+	  },
+	  {
+		"id": 48,
+		"word": "wiggle"
+	  },
+	  {
+		"id": 49,
+		"word": "duck"
+	  },
+	  {
+		"id": 50,
+		"word": "photographer"
+	  },
+	  {
+		"id": 51,
+		"word": "archer"
+	  },
+	  {
+		"id": 52,
+		"word": "ghost"
+	  },
+	  {
+		"id": 53,
+		"word": "rock star"
+	  },
+	  {
+		"id": 54,
+		"word": "balance beam"
+	  },
+	  {
+		"id": 55,
+		"word": "haircut"
+	  },
+	  {
+		"id": 56,
+		"word": "shoelaces"
+	  },
+	  {
+		"id": 57,
+		"word": "ballet"
+	  },
+	  {
+		"id": 58,
+		"word": "halo"
+	  },
+	  {
+		"id": 59,
+		"word": "sick"
+	  },
+	  {
+		"id": 60,
+		"word": "balloon"
+	  },
+	  {
+		"id": 61,
+		"word": "hiccup"
+	  },
+	  {
+		"id": 62,
+		"word": "singer"
+	  },
+	  {
+		"id": 63,
+		"word": "banana peel"
+	  },
+	  {
+		"id": 64,
+		"word": "hot dog"
+	  },
+	  {
+		"id": 65,
+		"word": "skateboard"
+	  },
+	  {
+		"id": 66,
+		"word": "book"
+	  },
+	  {
+		"id": 67,
+		"word": "hungry"
+	  },
+	  {
+		"id": 68,
+		"word": "slippery"
+	  },
+	  {
+		"id": 69,
+		"word": "braces"
+	  },
+	  {
+		"id": 70,
+		"word": "hurt"
+	  },
+	  {
+		"id": 71,
+		"word": "soccer"
+	  },
+	  {
+		"id": 72,
+		"word": "button"
+	  },
+	  {
+		"id": 73,
+		"word": "ice skating"
+	  },
+	  {
+		"id": 74,
+		"word": "strong"
+	  },
+	  {
+		"id": 75,
+		"word": "car"
+	  },
+	  {
+		"id": 76,
+		"word": "karate"
+	  },
+	  {
+		"id": 77,
+		"word": "stubbed toe"
+	  },
+	  {
+		"id": 78,
+		"word": "cheers"
+	  },
+	  {
+		"id": 79,
+		"word": "ladder"
+	  },
+	  {
+		"id": 80,
+		"word": "sunshine"
+	  },
+	  {
+		"id": 81,
+		"word": "clown"
+	  },
+	  {
+		"id": 82,
+		"word": "light bulb"
+	  },
+	  {
+		"id": 83,
+		"word": "surprise"
+	  },
+	  {
+		"id": 84,
+		"word": "dinosaur"
+	  },
+	  {
+		"id": 85,
+		"word": "limbo"
+	  },
+	  {
+		"id": 86,
+		"word": "swing"
+	  },
+	  {
+		"id": 87,
+		"word": "disco"
+	  },
+	  {
+		"id": 88,
+		"word": "macarena"
+	  },
+	  {
+		"id": 89,
+		"word": "sword"
+	  },
+	  {
+		"id": 90,
+		"word": "dizzy"
+	  },
+	  {
+		"id": 91,
+		"word": "paint"
+	  },
+	  {
+		"id": 92,
+		"word": "tap dance"
+	  },
+	  {
+		"id": 93,
+		"word": "fart"
+	  },
+	  {
+		"id": 94,
+		"word": "pirate"
+	  },
+	  {
+		"id": 95,
+		"word": "wheelbarrow"
+	  },
+	  {
+		"id": 96,
+		"word": "fishing"
+	  },
+	  {
+		"id": 97,
+		"word": "read"
+	  },
+	  {
+		"id": 98,
+		"word": "wizard of oz"
+	  },
+	  {
+		"id": 99,
+		"word": "gallop"
+	  },
+	  {
+		"id": 100,
+		"word": "river dance"
+	  },
+	  {
+		"id": 101,
+		"word": "birthday"
+	  },
+	  {
+		"id": 102,
+		"word": "hedgehog"
+	  },
+	  {
+		"id": 103,
+		"word": "pizza"
+	  },
+	  {
+		"id": 104,
+		"word": "blanket"
+	  },
+	  {
+		"id": 105,
+		"word": "helicopter"
+	  },
+	  {
+		"id": 106,
+		"word": "president"
+	  },
+	  {
+		"id": 107,
+		"word": "bright"
+	  },
+	  {
+		"id": 108,
+		"word": "hurricane"
+	  },
+	  {
+		"id": 109,
+		"word": "rainbow"
+	  },
+	  {
+		"id": 110,
+		"word": "bump"
+	  },
+	  {
+		"id": 111,
+		"word": "kite"
+	  },
+	  {
+		"id": 112,
+		"word": "rollercoaster"
+	  },
+	  {
+		"id": 113,
+		"word": "christmas"
+	  },
+	  {
+		"id": 114,
+		"word": "light"
+	  },
+	  {
+		"id": 115,
+		"word": "shadow"
+	  },
+	  {
+		"id": 116,
+		"word": "coffee"
+	  },
+	  {
+		"id": 117,
+		"word": "magic"
+	  },
+	  {
+		"id": 118,
+		"word": "shopping"
+	  },
+	  {
+		"id": 119,
+		"word": "cradle"
+	  },
+	  {
+		"id": 120,
+		"word": "makeup"
+	  },
+	  {
+		"id": 121,
+		"word": "shuffle"
+	  },
+	  {
+		"id": 122,
+		"word": "deer"
+	  },
+	  {
+		"id": 123,
+		"word": "marriage"
+	  },
+	  {
+		"id": 124,
+		"word": "slice"
+	  },
+	  {
+		"id": 125,
+		"word": "drool"
+	  },
+	  {
+		"id": 126,
+		"word": "mash"
+	  },
+	  {
+		"id": 127,
+		"word": "slip n’ slide"
+	  },
+	  {
+		"id": 128,
+		"word": "electric slide"
+	  },
+	  {
+		"id": 129,
+		"word": "measure"
+	  },
+	  {
+		"id": 130,
+		"word": "smear"
+	  },
+	  {
+		"id": 131,
+		"word": "excitement"
+	  },
+	  {
+		"id": 132,
+		"word": "mirror"
+	  },
+	  {
+		"id": 133,
+		"word": "spider"
+	  },
+	  {
+		"id": 134,
+		"word": "fight club"
+	  },
+	  {
+		"id": 135,
+		"word": "monster"
+	  },
+	  {
+		"id": 136,
+		"word": "the lion king"
+	  },
+	  {
+		"id": 137,
+		"word": "firefighter"
+	  },
+	  {
+		"id": 138,
+		"word": "motorcycle"
+	  },
+	  {
+		"id": 139,
+		"word": "trampoline"
+	  },
+	  {
+		"id": 140,
+		"word": "flashlight"
+	  },
+	  {
+		"id": 141,
+		"word": "nightmare"
+	  },
+	  {
+		"id": 142,
+		"word": "waterfall"
+	  },
+	  {
+		"id": 143,
+		"word": "garden"
+	  },
+	  {
+		"id": 144,
+		"word": "nosey"
+	  },
+	  {
+		"id": 145,
+		"word": "window"
+	  },
+	  {
+		"id": 146,
+		"word": "giraffe"
+	  },
+	  {
+		"id": 147,
+		"word": "overwhelmed"
+	  },
+	  {
+		"id": 148,
+		"word": "yo-yo"
+	  },
+	  {
+		"id": 149,
+		"word": "heavy"
+	  },
+	  {
+		"id": 150,
+		"word": "pancakes"
+	  }
+	]
+  }
