@@ -72,3 +72,17 @@ socket.on('new guess', function (guess) {
   $('.givenGuess').css('display', 'inline')
   $('.givenGuess').html(guess)
 });
+
+$.ajax({
+	url: 'assets/wordList.json',
+	dataType: 'json',
+	type: 'get',
+	cache: false,
+	success: function API(word){
+		// $(word.list).each(function(index,value) {
+		// 	console.log(value.word)
+		// })
+		console.log(word.list[0].word);
+		words = word
+	}
+})
