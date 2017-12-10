@@ -1,8 +1,23 @@
 
 var connected = false;
 var typing = false;
+var word;
 
 var socket = io();
+
+$.getJSON("assets/wordList.json",function(data){
+	console.log(data);
+});
+
+$.ajax({
+	url: 'assets/wordList.json',
+	dataType: 'json',
+	type: 'get',
+	cache: ''
+
+})
+
+alert(word.list[0].word)
 
 function search(ele) {
 	if (event.keyCode == 13) {
