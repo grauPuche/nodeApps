@@ -1,5 +1,10 @@
 {
-	"words": [
+	"wordList": [
+	  {
+		"id": 0,
+		"word": "test",
+		"synonym": "tested"
+	  },
 	  {
 		"id": 1,
 		"word": "airplane",
