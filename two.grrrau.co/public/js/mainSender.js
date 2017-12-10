@@ -1,7 +1,7 @@
 
 var connected = false;
 var typing = false;
-var word;
+var words;
 
 var socket = io();
 
@@ -20,8 +20,8 @@ $.ajax({
 		// 	console.log(value.word)
 		// })
 		console.log(word.list[0].word);
+		words = word
 	}
-
 })
 function search(ele) {
 	if (event.keyCode == 13) {
@@ -29,7 +29,7 @@ function search(ele) {
 		var guess = ele.value
 		socket.emit('new guess', guess);
 
-		console.log(word.list[0].word)
+		console.log(words.list[0].word)
 
 		// alert(ele.value);
 		$('.bigMsg').attr('class','smallMsg');
