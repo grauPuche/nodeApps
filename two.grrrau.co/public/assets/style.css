@@ -57,7 +57,76 @@
 	font-size: 50px;
 	display: inline-block;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 23px 0 rgba(0, 0, 0, 0.19);
+	/*animation: bounce 1s;*/
 }
+
+
+.right{
+	animation: right-flash 2s ease-in-out;
+}
+.wrong{
+	animation: wrong-flash 2s ease-in-out;
+}
+
+@keyframes right-flash {
+	0%, 10%, 25%, 40%, 50%, 60%, 75%, 90%, 100%{
+    transform: translateY(0);
+    background-color: #8539a8;
+  }
+  18%,22%,68%,72%{
+    background-color: #0ac91a;
+  }
+  20%,70% {
+    transform: translateY(-30px);
+    background-color: #0ac91a;
+  }
+ 28%,32%,78%,82%{
+    background-color: #0ac91a;
+  }
+  30%,80% {
+    transform: translateY(-15px);
+    background-color: #0ac91a;
+  }
+}
+
+
+  @keyframes wrong-flash {
+	0%, 10%, 25%, 40%, 50%, 60%, 75%, 90%, 100%{
+    transform: translateY(0);
+    background-color: #8539a8;
+  }
+  18%,22%,68%,72%{
+    background-color: #e51010;
+  }
+  20%,70% {
+    transform: translateY(-30px);
+    background-color: #e51010;
+  }
+ 28%,32%,78%,82%{
+    background-color: #e51010;
+  }
+  30%,80% {
+    transform: translateY(-15px);
+    background-color: #e51010;
+  }
+}
+/*
+
+  30% {
+    background-color: #aa5cce;
+  }
+  40% {
+    background-color: #0ac91a;
+  }
+  50% {
+    background-color: #aa5cce;
+  }
+  60% {
+    background-color: #0ac91a;
+  }
+  70% {
+    background-color: #aa5cce;
+  }*/
 
 .smallMsg {
 	margin: 10px;
