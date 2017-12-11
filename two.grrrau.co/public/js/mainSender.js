@@ -47,3 +47,14 @@ function search(ele) {
 socket.on('new guess', function(guess){
 	console.log(guess);	
 });
+
+socket.on('isItRight',function(isItRight){
+	if(isItRight == true){
+		console.log('YES!! RIGHT ANSWER!!')
+		$('.bigMsg').addClass('right');
+		// $('.bigMsg').removeClass('#right');
+	} else {
+		console.log('NO!! YOU FUCKED UP!!')
+		$('.bigMsg').addClass('wrong');
+	}
+})
