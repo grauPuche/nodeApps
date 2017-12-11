@@ -4,6 +4,27 @@ var video = document.getElementById('video');
 
 var socket = io.connect();
 
+var isItRight = false;
+
+var guess;
+var words;
+var n = 0;
+
+$.ajax({
+	url: 'assets/wordList.json',
+	dataType: 'json',
+	type: 'get',
+	cache: false,
+	success: function API(word){
+		// $(word.list).each(function(index,value) {
+		// 	console.log(value.word)
+		// })
+		console.log(word.list[0].word);
+		words = word
+		wordToGuess()
+	}
+})
+
 function handleSuccess(LOCAL) {
 	window.LOCAL = LOCAL; // make stream available to browser console
 	video.srcObject = LOCAL;
@@ -68,21 +89,42 @@ peer.on('call', function (call) {
 var socket = io();
 
 socket.on('new guess', function (guess) {
-  console.log(guess);
+  console.log('the guess is ~ '+guess);
   $('.givenGuess').css('display', 'inline')
   $('.givenGuess').html(guess)
+  if (guess == words.list[n].word){
+  		isItRight = true;
+  		socket.emit('isItRight', isItRight)
+		console.log('YAY!');
+		n++;
+		if(n>150){
+			n=1;
+		}
+		$('#word2guess').html(words.list[n].word);
+		console.log('next word is ~ '+words.list[n].word);
+	} else {
+		isItRight = false;
+  		socket.emit('isItRight', isItRight);
+	}
 });
 
-$.ajax({
-	url: 'assets/wordList.json',
-	dataType: 'json',
-	type: 'get',
-	cache: false,
-	success: function API(word){
-		// $(word.list).each(function(index,value) {
-		// 	console.log(value.word)
-		// })
-		console.log(word.list[0].word);
-		words = word
+socket.on('isItRight',function(isItRight){
+	if(isItRight == true){
+		console.log('YES!! RIGHT ANSWER!!')
+	} else {
+		console.log('NO!! YOU FUCKED UP!!')
 	}
 })
+
+function wordToGuess(){
+	
+	// $('.bigMsg').click(function(){
+	// 	$('#word2guess').html(words.list[n].word);
+	// 	console.log(words.list[n].word);
+	// 	n++;
+	// 	if(n>150){
+	// 		n=1;
+	// 	}
+	// });
+};
+
