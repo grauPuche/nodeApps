@@ -36,4 +36,8 @@ io.on('connection', function (socket) {
 		io.emit('mirrorID', id);
 		console.log('id is '+ id);
 	});
+	socket.on('isItRight', function(isItRight){
+		io.emit('isItRight', isItRight);
+		console.log('is the answer right? ' + isItRight);
+	})
 });
