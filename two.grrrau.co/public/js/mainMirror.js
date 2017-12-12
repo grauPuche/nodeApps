@@ -15,7 +15,7 @@ $.ajax({
 	dataType: 'json',
 	type: 'get',
 	cache: false,
-	success: function API(word){
+	success: function API(word) {
 		// $(word.list).each(function(index,value) {
 		// 	console.log(value.word)
 		// })
@@ -47,7 +47,11 @@ socket.on('connect', function () {
 });
 
 //local
-var peer = new Peer('local',{host: 'localhost', port: 9000, path: '/peer'});
+var peer = new Peer('local', {
+	host: 'localhost',
+	port: 9000,
+	path: '/peer'
+});
 //online 
 //var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
@@ -78,46 +82,66 @@ socket.on('mirrorID', function (mID) {
 peer.on('call', function (call) {
 	// Answer the call automatically (instead of prompting user) for demo purposes
 	call.answer(window.localStream);
-  console.log('answered!')
-  call.on('stream', function (stream) {
-    // `stream` is the MediaStream of the remote peer.
-    // Here you'd add it to an HTML video/canvas element.
-    video.srcObject = stream;
-  });
+	console.log('answered!')
+	call.on('stream', function (stream) {
+		// `stream` is the MediaStream of the remote peer.
+		// Here you'd add it to an HTML video/canvas element.
+		video.srcObject = stream;
+	});
 });
 
 var socket = io();
 
 socket.on('new guess', function (guess) {
-  console.log('the guess is ~ '+guess);
-  $('.givenGuess').css('display', 'inline')
-  $('.givenGuess').html(guess)
-  if (guess == words.list[n].word){
-  		isItRight = true;
-  		socket.emit('isItRight', isItRight)
+	console.log('the guess is ~ ' + guess);
+	$('.givenGuess').css('display', 'inline')
+	$('.givenGuess').html(guess)
+	// setTimeout(function () {
+	// 		$('.givenGuess').css('display', 'none')
+	// 		console.log("time's up!")
+	// 	},
+	// 	4000);
+	if (guess == words.list[n].word) {
+		isItRight = true;
+		socket.emit('isItRight', isItRight)
 		console.log('YAY!');
 		n++;
-		if(n>150){
-			n=1;
+		if (n > 150) {
+			n = 1;
 		}
+		document.getElementById("word2guess").style.display = "none";
+		document.getElementById("hidden").style.display = "block";
+		setTimeout(function () {
+				document.getElementById("hidden").style.display = "none";
+				document.getElementById("word2guess").style.display = "block";
+			},
+			timePeriodInMs);
 		$('#word2guess').html(words.list[n].word);
-		console.log('next word is ~ '+words.list[n].word);
+		console.log('next word is ~ ' + words.list[n].word);
 	} else {
 		isItRight = false;
-  		socket.emit('isItRight', isItRight);
+		socket.emit('isItRight', isItRight);
 	}
 });
 
-socket.on('isItRight',function(isItRight){
-	if(isItRight == true){
+socket.on('isItRight', function (isItRight) {
+	if (isItRight == true) {
 		console.log('YES!! RIGHT ANSWER!!')
+		$('.givenGuess').removeClass('right');
+		$('.givenGuess').removeClass('wrong');
+		$('.givenGuess').addClass('right');
+		
 	} else {
 		console.log('NO!! YOU FUCKED UP!!')
+		$('.givenGuess').removeClass('right');
+		$('.givenGuess').removeClass('wrong'); 
+		$('.givenGuess').addClass('wrong');
+		
 	}
 })
 
-function wordToGuess(){
-	
+function wordToGuess() {
+
 	// $('.bigMsg').click(function(){
 	// 	$('#word2guess').html(words.list[n].word);
 	// 	console.log(words.list[n].word);
@@ -128,3 +152,5 @@ function wordToGuess(){
 	// });
 };
 
+
+var timePeriodInMs = 4000;

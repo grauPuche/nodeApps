@@ -53,3 +53,14 @@ peer.on('call', function (call) {
     video.srcObject = stream;
   });
 });
+
+socket.on('isItRight',function(isItRight){
+	if(isItRight == true){
+		console.log('YES!! RIGHT ANSWER!!')
+		$('.bigMsg').addClass('right');
+		// $('.bigMsg').removeClass('#right');
+	} else {
+		console.log('NO!! YOU FUCKED UP!!')
+		$('.bigMsg').addClass('wrong');
+	}
+})
