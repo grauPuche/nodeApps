@@ -40,6 +40,8 @@ function search(ele) {
 		$('.sentMsgs').append("<div class='bigBox'><div class='bigMsg'>"+ele.value+"</div></div>");
 		$('.sentMsgs').attr('style','')
 
+		window.open('assets/hello.gif','winname','directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=400,height=350');
+		
 		ele.value = "";
 	}
 }
