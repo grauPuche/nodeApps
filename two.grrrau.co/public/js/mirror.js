@@ -127,16 +127,18 @@ socket.on('new guess', function (guess) {
 socket.on('isItRight', function (isItRight) {
 	if (isItRight == true) {
 		console.log('YES!! RIGHT ANSWER!!')
+		$('.givenGuess').css('display', 'none')
+		$('.givenGuess').css('display', 'inline')
 		$('.givenGuess').removeClass('right');
 		$('.givenGuess').removeClass('wrong');
 		$('.givenGuess').addClass('right');
-		
 	} else {
 		console.log('NO!! YOU FUCKED UP!!')
+		$('.givenGuess').css('display', 'none')
+		$('.givenGuess').css('display', 'inline')
 		$('.givenGuess').removeClass('right');
 		$('.givenGuess').removeClass('wrong'); 
 		$('.givenGuess').addClass('wrong');
-		
 	}
 })
 
