@@ -92,6 +92,20 @@ peer.on('call', function (call) {
 
 var socket = io();
 
+socket.on('n', function (wordNum) {
+	console.log('the # received is ~ ' + wordNum)
+	var wordNum = n;
+	document.getElementById("word2guess").style.display = "none";
+	document.getElementById("hidden").style.display = "block";
+	setTimeout(function () {
+			document.getElementById("hidden").style.display = "none";
+			document.getElementById("word2guess").style.display = "block";
+		},
+		timePeriodInMs);
+	$('#word2guess').html(words.list[n].word);
+	console.log('next word is ~ ' + words.list[n].word);
+});
+
 socket.on('new guess', function (guess) {
 	console.log('the guess is ~ ' + guess);
 	$('.givenGuess').css('display', 'inline')
@@ -137,7 +151,7 @@ socket.on('isItRight', function (isItRight) {
 		$('.givenGuess').css('display', 'none')
 		$('.givenGuess').css('display', 'inline')
 		$('.givenGuess').removeClass('right');
-		$('.givenGuess').removeClass('wrong'); 
+		$('.givenGuess').removeClass('wrong');
 		$('.givenGuess').addClass('wrong');
 	}
 })

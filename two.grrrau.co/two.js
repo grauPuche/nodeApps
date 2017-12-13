@@ -40,4 +40,8 @@ io.on('connection', function (socket) {
 		io.emit('isItRight', isItRight);
 		console.log('is the answer right? ' + isItRight);
 	})
+	socket.on('n',function (wordNum){
+		io.emit('n',wordNum);
+		console.log('the # sent is ~ '+wordNum)
+	})
 });
