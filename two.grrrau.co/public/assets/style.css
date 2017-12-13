@@ -276,8 +276,8 @@ input[type=text]:focus {
 #wordSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%; 
     background: #8539a8;
 	cursor: pointer;
@@ -289,6 +289,7 @@ input[type=text]:focus {
 	color: #f0f0f0;
 	margin-top: 20px;
 	display: inline;
-	margin-right: 16%;
+	margin-right: 10%;
+	margin-bottom: 50%;
 	text-align: right;
 }

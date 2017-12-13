@@ -1,632 +1,724 @@
 {
-	"list": [
-	  {
-		"id": 0,
-		"word": "test",
-		"synonym": "tested"
-	  },
-	  {
-		"id": 1,
-		"word": "airplane",
-		"synonym": "aircraft"
-	  },
-	  {
-		"id": 2,
-		"word": "ears",
-		"synonym": "ear"
-	  },
-	  {
-		"id": 3,
-		"word": "piano",
-		"synonym": [
-		  "keyboard",
-		  "grand piano"
-		]
-	  },
-	  {
-		"id": 4,
-		"word": "angry",
-		"synonym": ["hangry","mad"]
-	  },
-	  {
-		"id": 5,
-		"word": "elephant",
-		"synonym": "elephant"
-	  },
-	  {
-		"id": 6,
-		"word": "pinch",
-		"synonym": "pinch"
-	  },
-	  {
-		"id": 7,
-		"word": "baby",
-		"synonym": "toddler"
-	  },
-	  {
-		"id": 8,
-		"word": "fish",
-		"synonym": "fish"
-	  },
-	  {
-		"id": 9,
-		"word": "reach",
-		"synonym": "reach"
-	  },
-	  {
-		"id": 10,
-		"word": "ball",
-		"synonym": "sphere"
-	  },
-	  {
-		"id": 11,
-		"word": "flick",
-		"synonym": "flick"
-	  },
-	  {
-		"id": 12,
-		"word": "remote",
-		"synonym": "tv remote"
-	  },
-	  {
-		"id": 13,
-		"word": "baseball",
-		"synonym": "ball"
-	  },
-	  {
-		"id": 14,
-		"word": "football",
-		"synonym": "soccer"
-	  },
-	  {
-		"id": 15,
-		"word": "roll",
-		"synonym": "barrell roll"
-	  },
-	  {
-		"id": 16,
-		"word": "basketball",
-		"synonym": "ball"
-	  },
-	  {
-		"id": 17,
-		"word": "fork",
-		"synonym": "trident"
-	  },
-	  {
-		"id": 18,
-		"word": "sad",
-		"synonym": "depressed"
-	  },
-	  {
-		"id": 19,
-		"word": "bounce",
-		"synonym": "bouncer"
-	  },
-	  {
-		"id": 20,
-		"word": "giggle",
-		"synonym": "giggleepuff"
-	  },
-	  {
-		"id": 21,
-		"word": "scissors"
-	  },
-	  {
-		"id": 22,
-		"word": "cat"
-	  },
-	  {
-		"id": 23,
-		"word": "golf"
-	  },
-	  {
-		"id": 24,
-		"word": "skip"
-	  },
-	  {
-		"id": 25,
-		"word": "chicken"
-	  },
-	  {
-		"id": 26,
-		"word": "guitar"
-	  },
-	  {
-		"id": 27,
-		"word": "sneeze"
-	  },
-	  {
-		"id": 28,
-		"word": "chimpanzee"
-	  },
-	  {
-		"id": 29,
-		"word": "hammer"
-	  },
-	  {
-		"id": 30,
-		"word": "spin"
-	  },
-	  {
-		"id": 31,
-		"word": "clap"
-	  },
-	  {
-		"id": 32,
-		"word": "happy"
-	  },
-	  {
-		"id": 33,
-		"word": "spoon"
-	  },
-	  {
-		"id": 34,
-		"word": "cough"
-	  },
-	  {
-		"id": 35,
-		"word": "horns"
-	  },
-	  {
-		"id": 36,
-		"word": "stomp"
-	  },
-	  {
-		"id": 37,
-		"word": "cry"
-	  },
-	  {
-		"id": 38,
-		"word": "joke"
-	  },
-	  {
-		"id": 39,
-		"word": "stop"
-	  },
-	  {
-		"id": 40,
-		"word": "dog"
-	  },
-	  {
-		"id": 41,
-		"word": "mime"
-	  },
-	  {
-		"id": 42,
-		"word": "tail"
-	  },
-	  {
-		"id": 43,
-		"word": "drink"
-	  },
-	  {
-		"id": 44,
-		"word": "penguin"
-	  },
-	  {
-		"id": 45,
-		"word": "toothbrush"
-	  },
-	  {
-		"id": 46,
-		"word": "drums"
-	  },
-	  {
-		"id": 47,
-		"word": "phone"
-	  },
-	  {
-		"id": 48,
-		"word": "wiggle"
-	  },
-	  {
-		"id": 49,
-		"word": "duck"
-	  },
-	  {
-		"id": 50,
-		"word": "photographer"
-	  },
-	  {
-		"id": 51,
-		"word": "archer"
-	  },
-	  {
-		"id": 52,
-		"word": "ghost"
-	  },
-	  {
-		"id": 53,
-		"word": "rock star"
-	  },
-	  {
-		"id": 54,
-		"word": "balance beam"
-	  },
-	  {
-		"id": 55,
-		"word": "haircut"
-	  },
-	  {
-		"id": 56,
-		"word": "shoelaces"
-	  },
-	  {
-		"id": 57,
-		"word": "ballet"
-	  },
-	  {
-		"id": 58,
-		"word": "halo"
-	  },
-	  {
-		"id": 59,
-		"word": "sick"
-	  },
-	  {
-		"id": 60,
-		"word": "balloon"
-	  },
-	  {
-		"id": 61,
-		"word": "hiccup"
-	  },
-	  {
-		"id": 62,
-		"word": "singer"
-	  },
-	  {
-		"id": 63,
-		"word": "banana peel"
-	  },
-	  {
-		"id": 64,
-		"word": "hot dog"
-	  },
-	  {
-		"id": 65,
-		"word": "skateboard"
-	  },
-	  {
-		"id": 66,
-		"word": "book"
-	  },
-	  {
-		"id": 67,
-		"word": "hungry"
-	  },
-	  {
-		"id": 68,
-		"word": "slippery"
-	  },
-	  {
-		"id": 69,
-		"word": "braces"
-	  },
-	  {
-		"id": 70,
-		"word": "hurt"
-	  },
-	  {
-		"id": 71,
-		"word": "soccer"
-	  },
-	  {
-		"id": 72,
-		"word": "button"
-	  },
-	  {
-		"id": 73,
-		"word": "ice skating"
-	  },
-	  {
-		"id": 74,
-		"word": "strong"
-	  },
-	  {
-		"id": 75,
-		"word": "car"
-	  },
-	  {
-		"id": 76,
-		"word": "karate"
-	  },
-	  {
-		"id": 77,
-		"word": "stubbed toe"
-	  },
-	  {
-		"id": 78,
-		"word": "cheers"
-	  },
-	  {
-		"id": 79,
-		"word": "ladder"
-	  },
-	  {
-		"id": 80,
-		"word": "sunshine"
-	  },
-	  {
-		"id": 81,
-		"word": "clown"
-	  },
-	  {
-		"id": 82,
-		"word": "light bulb"
-	  },
-	  {
-		"id": 83,
-		"word": "surprise"
-	  },
-	  {
-		"id": 84,
-		"word": "dinosaur"
-	  },
-	  {
-		"id": 85,
-		"word": "limbo"
-	  },
-	  {
-		"id": 86,
-		"word": "swing"
-	  },
-	  {
-		"id": 87,
-		"word": "disco"
-	  },
-	  {
-		"id": 88,
-		"word": "macarena"
-	  },
-	  {
-		"id": 89,
-		"word": "sword"
-	  },
-	  {
-		"id": 90,
-		"word": "dizzy"
-	  },
-	  {
-		"id": 91,
-		"word": "paint"
-	  },
-	  {
-		"id": 92,
-		"word": "tap dance"
-	  },
-	  {
-		"id": 93,
-		"word": "fart"
-	  },
-	  {
-		"id": 94,
-		"word": "pirate"
-	  },
-	  {
-		"id": 95,
-		"word": "wheelbarrow"
-	  },
-	  {
-		"id": 96,
-		"word": "fishing"
-	  },
-	  {
-		"id": 97,
-		"word": "read"
-	  },
-	  {
-		"id": 98,
-		"word": "wizard of oz"
-	  },
-	  {
-		"id": 99,
-		"word": "gallop"
-	  },
-	  {
-		"id": 100,
-		"word": "river dance"
-	  },
-	  {
-		"id": 101,
-		"word": "birthday"
-	  },
-	  {
-		"id": 102,
-		"word": "hedgehog"
-	  },
-	  {
-		"id": 103,
-		"word": "pizza"
-	  },
-	  {
-		"id": 104,
-		"word": "blanket"
-	  },
-	  {
-		"id": 105,
-		"word": "helicopter"
-	  },
-	  {
-		"id": 106,
-		"word": "president"
-	  },
-	  {
-		"id": 107,
-		"word": "bright"
-	  },
-	  {
-		"id": 108,
-		"word": "hurricane"
-	  },
-	  {
-		"id": 109,
-		"word": "rainbow"
-	  },
-	  {
-		"id": 110,
-		"word": "bump"
-	  },
-	  {
-		"id": 111,
-		"word": "kite"
-	  },
-	  {
-		"id": 112,
-		"word": "rollercoaster"
-	  },
-	  {
-		"id": 113,
-		"word": "christmas"
-	  },
-	  {
-		"id": 114,
-		"word": "light"
-	  },
-	  {
-		"id": 115,
-		"word": "shadow"
-	  },
-	  {
-		"id": 116,
-		"word": "coffee"
-	  },
-	  {
-		"id": 117,
-		"word": "magic"
-	  },
-	  {
-		"id": 118,
-		"word": "shopping"
-	  },
-	  {
-		"id": 119,
-		"word": "cradle"
-	  },
-	  {
-		"id": 120,
-		"word": "makeup"
-	  },
-	  {
-		"id": 121,
-		"word": "shuffle"
-	  },
-	  {
-		"id": 122,
-		"word": "deer"
-	  },
-	  {
-		"id": 123,
-		"word": "marriage"
-	  },
-	  {
-		"id": 124,
-		"word": "slice"
-	  },
-	  {
-		"id": 125,
-		"word": "drool"
-	  },
-	  {
-		"id": 126,
-		"word": "mash"
-	  },
-	  {
-		"id": 127,
-		"word": "slip n’ slide"
-	  },
-	  {
-		"id": 128,
-		"word": "electric slide"
-	  },
-	  {
-		"id": 129,
-		"word": "measure"
-	  },
-	  {
-		"id": 130,
-		"word": "smear"
-	  },
-	  {
-		"id": 131,
-		"word": "excitement"
-	  },
-	  {
-		"id": 132,
-		"word": "mirror"
-	  },
-	  {
-		"id": 133,
-		"word": "spider"
-	  },
-	  {
-		"id": 134,
-		"word": "fight club"
-	  },
-	  {
-		"id": 135,
-		"word": "monster"
-	  },
-	  {
-		"id": 136,
-		"word": "the lion king"
-	  },
-	  {
-		"id": 137,
-		"word": "firefighter"
-	  },
-	  {
-		"id": 138,
-		"word": "motorcycle"
-	  },
-	  {
-		"id": 139,
-		"word": "trampoline"
-	  },
-	  {
-		"id": 140,
-		"word": "flashlight"
-	  },
-	  {
-		"id": 141,
-		"word": "nightmare"
-	  },
-	  {
-		"id": 142,
-		"word": "waterfall"
-	  },
-	  {
-		"id": 143,
-		"word": "garden"
-	  },
-	  {
-		"id": 144,
-		"word": "nosey"
-	  },
-	  {
-		"id": 145,
-		"word": "window"
-	  },
-	  {
-		"id": 146,
-		"word": "giraffe"
-	  },
-	  {
-		"id": 147,
-		"word": "overwhelmed"
-	  },
-	  {
-		"id": 148,
-		"word": "yo-yo"
-	  },
-	  {
-		"id": 149,
-		"word": "heavy"
-	  },
-	  {
-		"id": 150,
-		"word": "pancakes"
-	  }
-	]
+  "0": {
+    "id": 0,
+    "word": "test",
+    "pun": "we tested your habilities, and you got it!",
+    "gifs": "https://media.giphy.com/media/8FNlmNPDTo2wE/giphy-downsized.gif"
+  },
+  "1": {
+    "id": 1,
+    "word": "airplane",
+    "pun": "you went sky high with this one",
+    "gifs": "https://media.giphy.com/media/xT8qBunBN9HDmaur1C/giphy-tumblr.gif"
+  },
+  "2": {
+    "id": 2,
+    "word": "ears",
+    "pun": "we heard you were great, but not this much!",
+    "gifs": "https://media.giphy.com/media/l378p0VvTts3st2RG/giphy-downsized.gif"
+  },
+  "3": {
+    "id": 3,
+    "word": "piano",
+    "pun": "I can see you are in tune with your partner, nice job!",
+    "gifs": "https://media.giphy.com/media/vFtWp05vBYnMQ/giphy.gif"
+  },
+  "4": {
+    "id": 4,
+    "word": "angry",
+    "pun": "look around you! you all the rage RN!",
+    "gifs": "https://media.giphy.com/media/1hiVNxD34TpC0/giphy-downsized.gif"
+  },
+  "5": {
+    "id": 5,
+    "word": "elephant",
+    "pun": "there's no elephant in this room! everyone is talking about you!",
+    "gifs": "https://media.giphy.com/media/vhSsvljoGKugU/giphy-downsized.gif"
+  },
+  "6": {
+    "id": 6,
+    "word": "pinch",
+    "pun": "this team is adding a pinch of flavour to the game!",
+    "gifs": "https://media.giphy.com/media/zHwUsH05qEz0Q/giphy-downsized.gif"
+  },
+  "7": {
+    "id": 7,
+    "word": "baby",
+    "pun": "you are so good at this baby! ;D",
+    "gifs": "https://media.giphy.com/media/l3q2MxV8GBWU3lrkQ/giphy-downsized.gif"
+  },
+  "8": {
+    "id": 8,
+    "word": "fish",
+    "pun": "your success is getting fishy",
+    "gifs": "https://media.giphy.com/media/nC30bN4yizgek/giphy-downsized.gif"
+  },
+  "9": {
+    "id": 9,
+    "word": "reach",
+    "pun": "you are reaching to the stars",
+    "gifs": "https://media.giphy.com/media/Wlbh8GZkFmgpi/giphy-downsized.gif"
+  },
+  "10": {
+    "id": 10,
+    "word": "ball",
+    "pun": "keep going! we're having a ball!",
+    "gifs": "https://media.giphy.com/media/hhf0elihjikKc/giphy-downsized.gif"
+  },
+  "11": {
+    "id": 11,
+    "word": "flick",
+    "gifs": "https://media.giphy.com/media/3ohuAg9135FQFL2Z3i/giphy-downsized.gif"
+  },
+  "12": {
+    "id": 12,
+    "word": "remote",
+    "pun": "don't change channels! this is going great!",
+    "gifs": "https://media.giphy.com/media/zxU3pqFH0oPgQ/giphy-downsized.gif"
+  },
+  "13": {
+    "id": 13,
+    "word": "baseball",
+    "pun": "you knocked it out of the park this time",
+    "gifs": "https://media.giphy.com/media/3o6Ztg2MgUkcXyCgtG/giphy-tumblr.gif"
+  },
+  "14": {
+    "id": 14,
+    "word": "football",
+    "pun": "TOUCHDOWN!",
+    "gifs": "https://media.giphy.com/media/13MsN0d5e3I7S0/giphy-downsized.gif"
+  },
+  "15": {
+    "id": 15,
+    "word": "roll",
+    "pun": "you are on a roll!",
+    "gifs": "https://media.giphy.com/media/tluzSJPlukD6g/giphy-downsized.gif"
+  },
+  "16": {
+    "id": 16,
+    "word": "basketball",
+    "pun": "SLAM DUNK!",
+    "gifs": "https://media.giphy.com/media/AqzKynnMuIaJO/giphy-downsized.gif"
+  },
+  "17": {
+    "id": 17,
+    "word": "fork",
+    "pun": "don't fork it up ! you are killing it!",
+    "gifs": "https://media.giphy.com/media/kcli6l5DAplyo/giphy-downsized.gif"
+  },
+  "18": {
+    "id": 18,
+    "word": "sad",
+    "pun": "even though sad rhymes with bad, you were great!",
+    "gifs": "https://media.giphy.com/media/a9xhxAxaqOfQs/giphy-downsized.gif"
+  },
+  "19": {
+    "id": 19,
+    "word": "bounce",
+    "pun": "you might have not been great, but you bounced back!",
+    "gifs": "https://media.giphy.com/media/zByioUpFxQHAc/giphy-tumblr.gif"
+  },
+  "20": {
+    "id": 20,
+    "word": "giggle",
+    "pun": "at your performance!",
+    "gifs": "https://media.giphy.com/media/TUtr2Ky56D4Zy/giphy.gif"
+  },
+  "21": {
+    "id": 21,
+    "word": "scissors",
+    "pun": "cut it out! you are making other people look bad!",
+    "gifs": "https://media.giphy.com/media/9tT0s3SBnDm4o/giphy-downsized.gif"
+  },
+  "22": {
+    "id": 22,
+    "word": "cat",
+    "pun": "so hot right meow!",
+    "gifs": "https://media.giphy.com/media/atHI7U3aP3kl2/giphy-downsized.gif"
+  },
+  "23": {
+    "id": 23,
+    "word": "golf",
+    "pun": "putt it out your are too good",
+    "gifs": "https://media.giphy.com/media/xT9IguGd9sn4dIbaiQ/giphy-downsized.gif"
+  },
+  "24": {
+    "id": 24,
+    "word": "skip",
+    "pun": "skippity doo dah",
+    "gifs": "https://media.giphy.com/media/szvieDbNusoLu/giphy.gif"
+  },
+  "25": {
+    "id": 25,
+    "word": "chicken",
+    "pun": "why did the chicken cross the road? to see how good you are",
+    "gifs": "https://media.giphy.com/media/xz6XbcYbsGM0M/200w_d.gif"
+  },
+  "26": {
+    "id": 26,
+    "word": "guitar",
+    "pun": "music to my ears!",
+    "gifs": "https://media.giphy.com/media/TZYw3OpCZAb2E/giphy-downsized.gif"
+  },
+  "27": {
+    "id": 27,
+    "word": "sneeze",
+    "pun": "bless you",
+    "gifs": "https://media.giphy.com/media/k3hzYrw9tp0zu/giphy-downsized.gif"
+  },
+  "28": {
+    "id": 28,
+    "word": "chimpanzee",
+    "pun": "that was bananas!",
+    "gifs": "https://media.giphy.com/media/f5Ob523O6dTYA/giphy-downsized.gif"
+  },
+  "29": {
+    "id": 29,
+    "word": "hammer",
+    "pun": "2 legit – 2 legit 2 quit! (awww yeah)",
+    "gifs": "https://media.giphy.com/media/h4WJXrsRZSoM/giphy.gif"
+  },
+  "30": {
+    "id": 30,
+    "word": "spin",
+    "pun": "You spin me right round, baby, right round. Like a record, baby, right round round round.",
+    "gifs": "https://media.giphy.com/media/13CAdCrgEwJZsI/giphy-downsized.gif"
+  },
+  "31": {
+    "id": 31,
+    "word": "clap",
+    "gifs": "http://media1.giphy.com/media/GQnsaAWZ8ty00/giphy.gif"
+  },
+  "32": {
+    "id": 32,
+    "word": "happy",
+    "gifs": "https://media.giphy.com/media/3NtY188QaxDdC/giphy-downsized.gif"
+  },
+  "33": {
+    "id": 33,
+    "word": "spoon",
+    "gifs": "https://media.giphy.com/media/3o6Zt0hNCfak3QCqsw/giphy-downsized.gif"
+  },
+  "34": {
+    "id": 34,
+    "word": "cough",
+    "gifs": "https://media.giphy.com/media/gSAj25EO6sr7y/giphy-downsized.gif"
+  },
+  "35": {
+    "id": 35,
+    "word": "horns",
+    "gifs": "https://media.giphy.com/media/YTc5V2PyWTRYY/giphy.gif"
+  },
+  "36": {
+    "id": 36,
+    "word": "stomp",
+    "gifs": "https://giphy.com/gifs/bobs-burgers-fox-bobs-burgers-foxtv-xT8qB4nGwmMTOrulig"
+  },
+  "37": {
+    "id": 37,
+    "word": "cry",
+    "pun": "😭 it's so beautiful!",
+    "gifs": "http://i.perezhilton.com/wp-content/uploads/2015/03/dawson-crying-ugly-amazing-gifs.gif"
+  },
+  "38": {
+    "id": 38,
+    "word": "joke",
+    "gifs": "https://media.giphy.com/media/AaosjRHKjEcXm/giphy-downsized.gif"
+  },
+  "39": {
+    "id": 39,
+    "word": "stop",
+    "pun": "Never stop not stopping!",
+    "gifs": "https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy-downsized.gif"
+  },
+  "40": {
+    "id": 40,
+    "word": "dog",
+    "pun": "You need a dogter when feel depressed.",
+    "gifs": "https://media.giphy.com/media/5UfsOgBaXNQgE/giphy-downsized.gif"
+  },
+  "41": {
+    "id": 41,
+    "word": "mime",
+    "gifs": "https://media.giphy.com/media/14Z5u3zvx3zO0/giphy-downsized.gif"
+  },
+  "42": {
+    "id": 42,
+    "word": "tail",
+    "gifs": "https://media.giphy.com/media/AbwizY40N3co8/giphy-downsized.gif"
+  },
+  "43": {
+    "id": 43,
+    "word": "drink",
+    "pun": "so refreshing!",
+    "gifs": "https://media.giphy.com/media/xTiTncVep2khPGhK1i/giphy-tumblr.gif"
+  },
+  "44": {
+    "id": 44,
+    "word": "penguin",
+    "gifs": "http://i0.kym-cdn.com/photos/images/original/001/172/942/21c.gif"
+  },
+  "45": {
+    "id": 45,
+    "word": "toothbrush",
+    "pun": "you looked minty fresh!",
+    "gifs": "https://media.giphy.com/media/5XMYmz3dNdsGs/200w_d.gif"
+  },
+  "46": {
+    "id": 46,
+    "word": "drums",
+    "gifs": "https://media.giphy.com/media/Qw5jac4hmEsY8/giphy-tumblr.gif"
+  },
+  "47": {
+    "id": 47,
+    "word": "phone",
+    "pun": "off the hook!",
+    "gifs": "https://media.giphy.com/media/yPhqlJccIOaru/giphy-tumblr.gif"
+  },
+  "48": {
+    "id": 48,
+    "word": "wiggle",
+    "gifs": "https://media.giphy.com/media/cPxRDvlSj9QKA/giphy-downsized.gif"
+  },
+  "49": {
+    "id": 49,
+    "word": "duck",
+    "pun": "I ducking love it!",
+    "gifs": "https://media.giphy.com/media/pqqF3xsZRWhm8/200w_d.gif"
+  },
+  "50": {
+    "id": 50,
+    "word": "photographer",
+    "pun": "say cheese!",
+    "gifs": "https://media.giphy.com/media/GtacA9ZvCt9Di/giphy-tumblr.gif"
+  },
+  "51": {
+    "id": 51,
+    "word": "archer",
+    "pun": "bullseye!",
+    "gifs": "https://media.giphy.com/media/H8iL56bXGjVE4/giphy-downsized.gif"
+  },
+  "52": {
+    "id": 52,
+    "word": "ghost",
+    "pun": "you are so great you haunt people. in their dreams!",
+    "gifs": "https://media.giphy.com/media/EHKRUd3NpbHFe/giphy-downsized.gif"
+  },
+  "53": {
+    "id": 53,
+    "word": "rock star",
+    "pun": "you are clearly the rock star of this game!",
+    "gifs": "https://media.giphy.com/media/GyZ13lGkwJT0c/giphy-downsized.gif"
+  },
+  "54": {
+    "id": 54,
+    "word": "balance beam",
+    "pun": "way to stick that landing!",
+    "gifs": "https://media.giphy.com/media/fclh9jpvP6Lmg/giphy-downsized.gif"
+  },
+  "55": {
+    "id": 55,
+    "word": "haircut",
+    "gifs": "https://media.giphy.com/media/5xtDarKod5wgCsDvVUk/giphy-downsized.gif"
+  },
+  "56": {
+    "id": 56,
+    "word": "shoelaces",
+    "gifs": "https://media.giphy.com/media/8Gj6Q0rNo9CPS/giphy-downsized.gif"
+  },
+  "57": {
+    "id": 57,
+    "word": "ballet",
+    "pun": "what a grand-jeté!",
+    "gifs": "https://media.giphy.com/media/yarFJggnH24da/giphy-downsized.gif"
+  },
+  "58": {
+    "id": 58,
+    "word": "halo",
+    "gifs": "https://media.giphy.com/media/3ohhwL1qYdZzVFC2He/giphy-downsized.gif"
+  },
+  "59": {
+    "id": 59,
+    "word": "sick"
+  },
+  "60": {
+    "id": 60,
+    "word": "balloon",
+    "pun": "All the way up!"
+  },
+  "61": {
+    "id": 61,
+    "word": "hiccup"
+  },
+  "62": {
+    "id": 62,
+    "word": "singer"
+  },
+  "63": {
+    "id": 63,
+    "word": "banana peel"
+  },
+  "64": {
+    "id": 64,
+    "word": "hot dog"
+  },
+  "65": {
+    "id": 65,
+    "word": "skateboard"
+  },
+  "66": {
+    "id": 66,
+    "word": "book"
+  },
+  "67": {
+    "id": 67,
+    "word": "hungry"
+  },
+  "68": {
+    "id": 68,
+    "word": "slippery"
+  },
+  "69": {
+    "id": 69,
+    "word": "braces"
+  },
+  "70": {
+    "id": 70,
+    "word": "hurt"
+  },
+  "71": {
+    "id": 71,
+    "word": "soccer",
+    "pun": "GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAL!"
+  },
+  "72": {
+    "id": 72,
+    "word": "button"
+  },
+  "73": {
+    "id": 73,
+    "word": "ice skating"
+  },
+  "74": {
+    "id": 74,
+    "word": "strong"
+  },
+  "75": {
+    "id": 75,
+    "word": "car",
+    "pun": "vroom, vroom! you go 0 to 60 in one second "
+  },
+  "76": {
+    "id": 76,
+    "word": "karate",
+    "pun": "you karate chopped the sh!t out of this one pal!"
+  },
+  "77": {
+    "id": 77,
+    "word": "stubbed toe"
+  },
+  "78": {
+    "id": 78,
+    "word": "cheers"
+  },
+  "79": {
+    "id": 79,
+    "word": "ladder"
+  },
+  "80": {
+    "id": 80,
+    "word": "sunshine"
+  },
+  "81": {
+    "id": 81,
+    "word": "clown",
+    "pun": "stop clowning around! that was great!"
+  },
+  "82": {
+    "id": 82,
+    "word": "light bulb"
+  },
+  "83": {
+    "id": 83,
+    "word": "surprise"
+  },
+  "84": {
+    "id": 84,
+    "word": "dinosaur"
+  },
+  "85": {
+    "id": 85,
+    "word": "limbo"
+  },
+  "86": {
+    "id": 86,
+    "word": "swing"
+  },
+  "87": {
+    "id": 87,
+    "word": "disco"
+  },
+  "88": {
+    "id": 88,
+    "word": "macarena",
+    "pun": "dale a tu cuerpo alegría"
+  },
+  "89": {
+    "id": 89,
+    "word": "sword",
+    "pun": "Good show, my liege!"
+  },
+  "90": {
+    "id": 90,
+    "word": "dizzy"
+  },
+  "91": {
+    "id": 91,
+    "word": "paint"
+  },
+  "92": {
+    "id": 92,
+    "word": "tap dance"
+  },
+  "93": {
+    "id": 93,
+    "word": "fart"
+  },
+  "94": {
+    "id": 94,
+    "word": "pirate",
+    "pun": "shiver me timbers!"
+  },
+  "95": {
+    "id": 95,
+    "word": "wheelbarrow"
+  },
+  "96": {
+    "id": 96,
+    "word": "fishing"
+  },
+  "97": {
+    "id": 97,
+    "word": "read"
+  },
+  "98": {
+    "id": 98,
+    "word": "wizard of oz"
+  },
+  "99": {
+    "id": 99,
+    "word": "gallop"
+  },
+  "100": {
+    "id": 100,
+    "word": "river dance",
+    "gifs": "http://stream1.gifsoup.com/view6/3570484/wliia-lord-of-the-riverdance-o.gif"
+  },
+  "101": {
+    "id": 101,
+    "word": "birthday"
+  },
+  "102": {
+    "id": 102,
+    "word": "hedgehog"
+  },
+  "103": {
+    "id": 103,
+    "word": "pizza"
+  },
+  "104": {
+    "id": 104,
+    "word": "blanket"
+  },
+  "105": {
+    "id": 105,
+    "word": "helicopter",
+    "pun": "You got in the choppa!!!!",
+    "gifs": "https://media.giphy.com/media/IS8rofRVVeY5q/giphy.gif"
+  },
+  "106": {
+    "id": 106,
+    "word": "president",
+    "pun": "Obama Out.",
+    "gifs": "https://giphy.com/gifs/obama-mic-drop-out-3o7qDSOvfaCO9b3MlO"
+  },
+  "107": {
+    "id": 107,
+    "word": "bright"
+  },
+  "108": {
+    "id": 108,
+    "word": "hurricane"
+  },
+  "109": {
+    "id": 109,
+    "word": "rainbow"
+  },
+  "110": {
+    "id": 110,
+    "word": "bump"
+  },
+  "111": {
+    "id": 111,
+    "word": "kite"
+  },
+  "112": {
+    "id": 112,
+    "word": "rollercoaster"
+  },
+  "113": {
+    "id": 113,
+    "word": "christmas"
+  },
+  "114": {
+    "id": 114,
+    "word": "light"
+  },
+  "115": {
+    "id": 115,
+    "word": "shadow"
+  },
+  "116": {
+    "id": 116,
+    "word": "coffee"
+  },
+  "117": {
+    "id": 117,
+    "word": "magic"
+  },
+  "118": {
+    "id": 118,
+    "word": "shopping"
+  },
+  "119": {
+    "id": 119,
+    "word": "cradle"
+  },
+  "120": {
+    "id": 120,
+    "word": "makeup",
+    "pun": "on fleek!"
+  },
+  "121": {
+    "id": 121,
+    "word": "shuffle"
+  },
+  "122": {
+    "id": 122,
+    "word": "deer"
+  },
+  "123": {
+    "id": 123,
+    "word": "marriage"
+  },
+  "124": {
+    "id": 124,
+    "word": "slice"
+  },
+  "125": {
+    "id": 125,
+    "word": "drool"
+  },
+  "126": {
+    "id": 126,
+    "word": "mash"
+  },
+  "127": {
+    "id": 127,
+    "word": "slip n’ slide"
+  },
+  "128": {
+    "id": 128,
+    "word": "electric slide"
+  },
+  "129": {
+    "id": 129,
+    "word": "measure"
+  },
+  "130": {
+    "id": 130,
+    "word": "smear"
+  },
+  "131": {
+    "id": 131,
+    "word": "excitement"
+  },
+  "132": {
+    "id": 132,
+    "word": "mirror"
+  },
+  "133": {
+    "id": 133,
+    "word": "spider"
+  },
+  "134": {
+    "id": 134,
+    "word": "fight club"
+  },
+  "135": {
+    "id": 135,
+    "word": "monster"
+  },
+  "136": {
+    "id": 136,
+    "word": "the lion king",
+    "pun": "Hakuna matata!"
+  },
+  "137": {
+    "id": 137,
+    "word": "firefighter",
+    "pun": "🔥🔥🔥 "
+  },
+  "138": {
+    "id": 138,
+    "word": "motorcycle"
+  },
+  "139": {
+    "id": 139,
+    "word": "trampoline"
+  },
+  "140": {
+    "id": 140,
+    "word": "flashlight"
+  },
+  "141": {
+    "id": 141,
+    "word": "nightmare"
+  },
+  "142": {
+    "id": 142,
+    "word": "waterfall"
+  },
+  "143": {
+    "id": 143,
+    "word": "garden"
+  },
+  "144": {
+    "id": 144,
+    "word": "nosey"
+  },
+  "145": {
+    "id": 145,
+    "word": "window"
+  },
+  "146": {
+    "id": 146,
+    "word": "giraffe"
+  },
+  "147": {
+    "id": 147,
+    "word": "overwhelmed"
+  },
+  "148": {
+    "id": 148,
+    "word": "yo-yo"
+  },
+  "149": {
+    "id": 149,
+    "word": "heavy"
+  },
+  "150": {
+    "id": 150,
+    "word": "pancakes"
   }
+}
