@@ -11,9 +11,13 @@
 
 <body>
 	<div id="wrapper">
-		<div class="smallMsg" style="width:250px; text-align:center; border-radius:25px;" >
-			<input id="wordSlider" type="range" min="1" max="150" step="1" style="width:230px;"oninput="rangevalue.value=value"/>
-			<div id="word"><output id="rangevalue">50</output></div>
+		<div class="smallMsg" style="width:250px; text-align:right; border-radius:25px;">
+			<input id="wordSlider" type="range" min="1" max="150" step="1" style="width:230px;" oninput="rangevalue.value=value" />
+			<div id="word">
+				<output id="rangevalue" style="width:63px;" >76</output>
+				<div class="smallMsg" id="button" onclick="slider()" style="width:50px;border-radius:25px; padding:0px; background: #8539a8; position:relative; top:20px;"></div>
+			</div>
+
 		</div>
 	</div>
 </body>

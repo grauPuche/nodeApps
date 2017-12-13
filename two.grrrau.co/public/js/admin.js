@@ -1,2 +1,7 @@
-var wordValue = document.getElementById("wordSlider").value
-console.log(wordValue);
+var socket = io();
+
+function slider(){
+	var wordNum = document.getElementById("wordSlider").value;
+	socket.emit('n', wordNum);
+	console.log(wordNum);
+};
