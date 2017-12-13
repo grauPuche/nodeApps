@@ -1,5 +1,23 @@
 var socket = io();
 
+var words;
+var response
+
+$.ajax({
+	url: 'assets/wordList.json',
+	dataType: 'json',
+	type: 'get',
+	cache: false,
+	success: function API(word) {
+		// $(word.list).each(function(index,value) {
+		// 	console.log(value.word)
+		// })
+		console.log(word.list[n].word);
+		words = word
+		wordToGuess()
+	}
+})
+
 socket.on('new guess', function(guess){
 	console.log(guess);	
 	$('.bigMsg').attr('class','smallMsg');
