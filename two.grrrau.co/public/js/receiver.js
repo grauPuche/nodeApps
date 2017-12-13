@@ -21,3 +21,7 @@ socket.on('isItRight',function(isItRight){
 		$('.bigMsg').addClass('wrong');
 	}
 })
+
+socket.on('response',function(response){
+	$('.sentMsgs').append("<div class='smallBox'><div class='receivedBox'><div class='received'><img src='"+words.list[response].gif+"' alt=''></div></div></div><div class='smallBox'><div class='receivedBox'><div class='receivedTxt'>"+words.list[response].pun+"</div></div></div>");
+})

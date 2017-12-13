@@ -20,7 +20,7 @@ $.ajax({
 		// $(word.list).each(function(index,value) {
 		// 	console.log(value.word)
 		// })
-		console.log(word.list[0].word);
+		console.log(word.list[n].word);
 		words = word
 		wordToGuess()
 	}
@@ -119,7 +119,9 @@ socket.on('new guess', function (guess) {
 	// 	4000);
 	if (guess == words.list[n].word) {
 		isItRight = true;
-		socket.emit('isItRight', isItRight)
+		socket.emit('isItRight', isItRight);
+		n = response;
+		socket.emit('response', response);
 		console.log('YAY!');
 		n++;
 		if (n > 150) {
