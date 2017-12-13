@@ -9,6 +9,7 @@ var isItRight = false;
 var guess;
 var words;
 var n = 0;
+var wordNum;
 
 $.ajax({
 	url: 'assets/wordList.json',
@@ -94,7 +95,8 @@ var socket = io();
 
 socket.on('n', function (wordNum) {
 	console.log('the # received is ~ ' + wordNum)
-	var wordNum = n;
+	n = wordNum;
+	console.log('n now is ~ ' + n)
 	document.getElementById("word2guess").style.display = "none";
 	document.getElementById("hidden").style.display = "block";
 	setTimeout(function () {
