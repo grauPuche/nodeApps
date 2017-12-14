@@ -10,6 +10,7 @@ var guess;
 var words;
 var n = 0;
 var wordNum;
+var response;
 
 $.ajax({
 	url: 'assets/wordList.json',
@@ -20,7 +21,7 @@ $.ajax({
 		// $(word.list).each(function(index,value) {
 		// 	console.log(value.word)
 		// })
-		console.log(word.list[n].word);
+		console.log(word.list[0].word);
 		words = word
 		wordToGuess()
 	}
@@ -120,7 +121,7 @@ socket.on('new guess', function (guess) {
 	if (guess == words.list[n].word) {
 		isItRight = true;
 		socket.emit('isItRight', isItRight);
-		n = response;
+		response = n;
 		socket.emit('response', response);
 		console.log('YAY!');
 		n++;

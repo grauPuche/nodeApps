@@ -44,4 +44,8 @@ io.on('connection', function (socket) {
 		io.emit('n',wordNum);
 		console.log('the # sent is ~ '+wordNum)
 	})
+	socket.on('response',function (response){
+		io.emit('response',response);
+		console.log('response sent is ~ '+response)
+	})
 });

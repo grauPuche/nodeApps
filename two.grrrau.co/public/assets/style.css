@@ -1,12 +1,19 @@
+body {
+	background-color: #f0f0f0;
+}
+
 #wrapper {
-	position: fixed !important;
-	position: absolute;
+	/* position: fixed !important; */
+	position: relative;
 	top: 0;
 	right: 0;
-	bottom: 0;
 	left: 0;
 	background-color: #f0f0f0;
 	font-family: 'Nunito', sans-serif;
+	min-height: 100%;
+	height: auto;
+	/* overflow: auto; */
+	padding-bottom: 200px;
 }
 
 #video {
@@ -26,7 +33,7 @@
 }
 
 .msgs {
-	height: 80%;
+	/* height: 80%; */
 	width: 66%;
 	margin: auto;
 	margin-top: 10%;
@@ -37,7 +44,7 @@
 
 .sentMsgs {
 	/* background-color: blue; */
-	height: 85%;
+	/* height: 85%; */
 	/* overflow: hidden; */
 }
 
@@ -223,6 +230,15 @@ input[type=text] {
 	border-radius: 25px;
 	font-size: 35px;
 	font-family: 'Nunito', sans-serif;
+	/* position: absolute; */
+}
+.input{
+	width: 100%;
+}
+.form{
+	position: fixed;
+	bottom: 200px;
+	width: 65%;
 }
 
 input[type=text]:focus {
@@ -308,24 +324,24 @@ input[type=text]:focus {
 	display: inline-block;
 	animation: fade .5s ease-in-out;
 }
+
 .receivedTxt {
+	margin: 10px;
 	margin-top: 45px;
-			margin: 10px;
-		border-radius: 25px;
-		border-bottom-right-radius: 0;
-		float: right;
-		background: #dbd3df;
-		color: #2a282b;
-		padding: 20px;
-		min-height: 47px;
-		font-size: 35px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-		display: inline-block;
-		animation: fade2 .75s ease-in-out;
-		
-		
+	border-radius: 25px;
+	border-bottom-right-radius: 0;
+	background: #dbd3df;
+	color: #2a282b;
+	padding: 20px;
+	min-height: 47px;
+	font-size: 35px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	float: right;
+	display: inline-block;
+	animation: fade2 .75s ease-in-out;
 }
-.receivedBox{
+
+.receivedBox {
 	height: auto;
 	width: 100%;
 	display: inline-block;
@@ -333,32 +349,31 @@ input[type=text]:focus {
 
 @keyframes fade {
 	from {
-	  opacity: 0;
-	  -webkit-transform: translate3d(100%, 0, 0);
-	  transform: translate3d(100%, 0, 0);
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
 	}
-  
 	to {
-	  opacity: 1;
-	  -webkit-transform: none;
-	  transform: none;
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
 	}
-  }
-  @keyframes fade2 {
-	
+}
+
+@keyframes fade2 {
 	0% {
 		opacity: 0;
 		-webkit-transform: translate3d(100%, 0, 0);
 		transform: translate3d(100%, 0, 0);
-	  }25% {
-	  opacity: 0;
-	  -webkit-transform: translate3d(100%, 0, 0);
-	  transform: translate3d(100%, 0, 0);
 	}
-  
+	25% {
+		opacity: 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
 	100% {
-	  opacity: 1;
-	  -webkit-transform: none;
-	  transform: none;
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
 	}
-  }
+}

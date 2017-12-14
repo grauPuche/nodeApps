@@ -1,7 +1,11 @@
 var socket = io();
 
 var words;
-var response
+var response;
+var n = 0
+
+var objDiv = document;
+objDiv.scrollTop = objDiv.scrollHeight;
 
 $.ajax({
 	url: 'assets/wordList.json',
@@ -14,7 +18,6 @@ $.ajax({
 		// })
 		console.log(word.list[n].word);
 		words = word
-		wordToGuess()
 	}
 })
 
@@ -27,6 +30,8 @@ socket.on('new guess', function(guess){
 	
 	$('.sentMsgs').append("<div class='bigBox'><div class='bigMsg'>"+guess+"</div></div>");
 	$('.sentMsgs').attr('style','')
+	$(document).scrollTop($(document).height());
+	
 });
 
 socket.on('isItRight',function(isItRight){
@@ -41,5 +46,10 @@ socket.on('isItRight',function(isItRight){
 })
 
 socket.on('response',function(response){
-	$('.sentMsgs').append("<div class='smallBox'><div class='receivedBox'><div class='received'><img src='"+words.list[response].gif+"' alt=''></div></div></div><div class='smallBox'><div class='receivedBox'><div class='receivedTxt'>"+words.list[response].pun+"</div></div></div>");
+	$('.sentMsgs').append("<div class='smallBox'><div class='receivedBox'><div class='received'><img src='"+words.list[response].gifs+"' alt=''></div></div></div><div class='smallBox'><div class='receivedBox'><div class='receivedTxt'>"+words.list[response].pun+"</div></div></div>");
+	// $(body).scrollTop($(body).height());	
+	//window.scrollTo(0,document.body.scrollHeight + 100);
+	$('html,body').animate({
+        scrollTop: $("#empty").offset().top},
+        'slow');
 })
