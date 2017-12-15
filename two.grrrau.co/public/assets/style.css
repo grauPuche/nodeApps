@@ -309,7 +309,7 @@ input[type=text]:focus {
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	background: #8539a8;
+	background: #601b80;
 	cursor: pointer;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -321,6 +321,13 @@ input[type=text]:focus {
 	margin-right: 10%;
 	margin-bottom: 50%;
 	text-align: right;
+}
+
+#word2 {
+	color: #f0f0f0;
+	text-align: center;
+	width: 100%;
+	/* font-size: 80px; */
 }
 
 .received {
