@@ -6,6 +6,10 @@ var socket = io.connect();
 
 var isItRight = false;
 
+var timer;
+
+var x = 0;
+
 var guess;
 var words;
 var n = 0;
@@ -111,13 +115,16 @@ socket.on('n', function (wordNum) {
 
 socket.on('new guess', function (guess) {
 	console.log('the guess is ~ ' + guess);
-	$('.givenGuess').css('display', 'inline')
-	$('.givenGuess').html(guess)
-	// setTimeout(function () {
-	// 		$('.givenGuess').css('display', 'none')
-	// 		console.log("time's up!")
-	// 	},
-	// 	4000);
+	clearTimeout(timer);
+	// $('.givenGuess').css('display', 'inline')
+	$('.givenGuess').remove();
+	x++;
+	$('.guesses').append('<div class="givenGuess" id="'+ x +'">'+guess+'</div>')
+	timer = setTimeout(function () {
+			$('#'+x).remove();
+			console.log("deleted " + x );
+		},
+		4000);
 	if (guess == words.list[n].word) {
 		isItRight = true;
 		socket.emit('isItRight', isItRight);
@@ -146,17 +153,17 @@ socket.on('new guess', function (guess) {
 socket.on('isItRight', function (isItRight) {
 	if (isItRight == true) {
 		console.log('YES!! RIGHT ANSWER!!')
-		$('.givenGuess').css('display', 'none')
-		$('.givenGuess').css('display', 'inline')
-		$('.givenGuess').removeClass('right');
-		$('.givenGuess').removeClass('wrong');
+		// $('.givenGuess').css('display', 'none')
+		// $('.givenGuess').css('display', 'inline')
+		// $('.givenGuess').removeClass('right');
+		// $('.givenGuess').removeClass('wrong');
 		$('.givenGuess').addClass('right');
 	} else {
 		console.log('NO!! YOU FUCKED UP!!')
-		$('.givenGuess').css('display', 'none')
-		$('.givenGuess').css('display', 'inline')
-		$('.givenGuess').removeClass('right');
-		$('.givenGuess').removeClass('wrong');
+		// $('.givenGuess').css('display', 'none')
+		// $('.givenGuess').css('display', 'inline')
+		// $('.givenGuess').removeClass('right');
+		// $('.givenGuess').removeClass('wrong');
 		$('.givenGuess').addClass('wrong');
 	}
 })

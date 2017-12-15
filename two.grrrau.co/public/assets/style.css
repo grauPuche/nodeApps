@@ -16,6 +16,20 @@ body {
 	padding-bottom: 200px;
 }
 
+#wrapperRemote {
+	position: fixed !important;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #f0f0f0;
+	font-family: 'Nunito', sans-serif;
+	min-height: 100%;
+	height: auto;
+	/* overflow: auto; */
+	padding-bottom: 200px;
+}
+
 #video {
 	height: 75%;
 	position: relative;
@@ -26,7 +40,7 @@ body {
 
 #remote {
 	height: 100%;
-	position: relative;
+	/* position: relative; */
 	right: 840px;
 	transform: rotateY(180deg);
 	/* opacity:0.5; */
@@ -267,7 +281,7 @@ input[type=text]:focus {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 	color: #f0f0f0;
 	text-align: center;
-	display: none;
+	/* display: none; */
 }
 
 #hidden {

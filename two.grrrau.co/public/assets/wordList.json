@@ -69,6 +69,7 @@
     {
       "id": 11,
       "word": "flick",
+      "pun": "yeah! flick those haters away",
       "gifs": "https://media.giphy.com/media/3ohuAg9135FQFL2Z3i/giphy-downsized.gif"
     },
     {
@@ -122,6 +123,7 @@
     {
       "id": 20,
       "word": "giggle",
+      "pun": "omg your acting!",
       "gifs": "https://media.giphy.com/media/TUtr2Ky56D4Zy/giphy-downsized.gif"
     },
     {
@@ -152,7 +154,7 @@
       "id": 25,
       "word": "chicken",
       "pun": "why did the chicken cross the road? to see how good you are",
-      "gifs": "https://media.giphy.com/media/xz6XbcYbsGM0M/200w_d.gif"
+      "gifs": "https://media.giphy.com/media/8N7fTPAIHCucw/giphy-downsized.gif"
     },
     {
       "id": 26,
@@ -199,11 +201,13 @@
     {
       "id": 33,
       "word": "spoon",
+      "pun": "that was spoontacular",
       "gifs": "https://media.giphy.com/media/3o6Zt0hNCfak3QCqsw/giphy-downsized.gif"
     },
     {
       "id": 34,
       "word": "cough",
+      "pun": "bless my soul, That was amazing",
       "gifs": "https://media.giphy.com/media/gSAj25EO6sr7y/giphy-downsized.gif"
     },
     {
@@ -215,6 +219,7 @@
     {
       "id": 36,
       "word": "stomp",
+      "pun": "this team is stopming the competition.",
       "gifs": "https://giphy.com/gifs/bobs-burgers-fox-bobs-burgers-foxtv-xT8qB4nGwmMTOrulig"
     },
     {
@@ -250,6 +255,7 @@
     {
       "id": 42,
       "word": "tail",
+      "pun": "tailing that stardom with those moves!",
       "gifs": "https://media.giphy.com/media/AbwizY40N3co8/giphy-downsized.gif"
     },
     {
@@ -261,6 +267,7 @@
     {
       "id": 44,
       "word": "penguin",
+      "pun": "that was adorable",
       "gifs": "http://i0.kym-cdn.com/photos/images/original/001/172/942/21c.gif"
     },
     {
@@ -272,6 +279,7 @@
     {
       "id": 46,
       "word": "drums",
+      "pun": "you are overflowing with rythm!",
       "gifs": "https://media.giphy.com/media/Qw5jac4hmEsY8/giphy-downsized.gif"
     },
     {
@@ -283,6 +291,7 @@
     {
       "id": 48,
       "word": "wiggle",
+      "pun": "you are wiggling your way to the Charades Wall of Fame",
       "gifs": "https://media.giphy.com/media/cPxRDvlSj9QKA/giphy-downsized.gif"
     },
     {
@@ -330,6 +339,7 @@
     {
       "id": 56,
       "word": "shoelaces",
+      "pun": "I was hoping you would take your shoe off",
       "gifs": "https://media.giphy.com/media/8Gj6Q0rNo9CPS/giphy-downsized.gif"
     },
     {
@@ -359,11 +369,14 @@
     {
       "id": 61,
       "word": "hiccup",
+      "pun": "you scared my hiccups away.",
       "gifs": "https://media.giphy.com/media/PVE9gMrs450vC/giphy-downsized.gif"
     },
     {
       "id": 62,
-      "word": "singer"
+      "word": "singer",
+      "pun": "I can't hear anything, but I know it sounded wordeful",
+      "gifs": "https://media.giphy.com/media/65ZYz26HfUqyc/giphy-downsized.gif"
     },
     {
       "id": 63,
@@ -373,17 +386,21 @@
     },
     {
       "id": 64,
-      "word": "hot dog"
+      "word": "hot dog",
+      "pun": "It's clearly a sandwitch! Right??",
+      "gifs": "https://media.giphy.com/media/op711e2buzcc0/giphy-downsized.gif"
     },
     {
       "id": 65,
       "word": "skateboard",
+      "pun": "Set your drink on a skateboard, they make good coasters.",
       "gifs": "https://media2.giphy.com/media/3o7budsaks9ABZC0es/200_d.gif"
     },
     {
       "id": 66,
       "word": "book",
-      "pun": "you can't judge a book by its cover!"
+      "pun": "you can't judge a book by its cover!",
+      "gifs": "https://media.giphy.com/media/LkjlH3rVETgsg/giphy-downsized.gif"
     },
     {
       "id": 67,
@@ -405,7 +422,9 @@
     },
     {
       "id": 70,
-      "word": "hurt"
+      "word": "hurt",
+      "pun": "if you keep playing this good you are gonna hurt the other players' feelings!",
+      "gifs": "https://media.giphy.com/media/6bWNHVAoj7tNS/giphy-downsized.gif"
     },
     {
       "id": 71,
@@ -416,11 +435,14 @@
     {
       "id": 72,
       "word": "button",
-      "pun": "you're cute as a button!"
+      "pun": "you're cute as a button!",
+      "gifs": "https://media.giphy.com/media/ySbnAv8vTqDSg/giphy-downsized.gif"
     },
     {
       "id": 73,
-      "word": "ice skating"
+      "word": "ice skating",
+      "pun": "It felt as if I was in Bryant Park",
+      "gifs": "https://media.giphy.com/media/3o7TKzkhLYrvcUYd1K/giphy-downsized.gif"
     },
     {
       "id": 74,
@@ -431,7 +453,8 @@
     {
       "id": 75,
       "word": "car",
-      "pun": "vroom, vroom! you go 0 to 60 in one second "
+      "pun": "vroom, vroom! you go 0 to 60 in one second ",
+      "gifs": "https://media.giphy.com/media/fiawCXeJBwrZu/giphy-downsized.gif"
     },
     {
       "id": 76,
@@ -441,7 +464,9 @@
     },
     {
       "id": 77,
-      "word": "stubbed toe"
+      "word": "stubbed toe",
+      "pun": "ow! that was so good I could feel the pain",
+      "gifs": "https://media.giphy.com/media/eyQXvHOO9F3ZC/giphy-downsized.gif"
     },
     {
       "id": 78,
@@ -451,7 +476,9 @@
     },
     {
       "id": 79,
-      "word": "ladder"
+      "word": "ladder",
+      "pun": "this team is stepping the ladders if this Charades 'league'",
+      "gifs": "https://media.giphy.com/media/PlFipIQY7Wr60/giphy.gif"
     },
     {
       "id": 80,
@@ -468,6 +495,7 @@
     {
       "id": 82,
       "word": "light bulb",
+      "pun": "What's a lightbulb's favorite movie? The Shining.",
       "gifs": "https://media1.giphy.com/media/l2JebisijdzVL2Cqs/200_d.gif"
     },
     {
@@ -485,12 +513,14 @@
     {
       "id": 85,
       "word": "limbo",
-      "pun": "Your fate is no longer in limbo.  You are a winner!"
+      "pun": "Your fate is no longer in limbo.  You are a winner!",
+      "gifs": "https://media.giphy.com/media/l0O9yanlMYzLFoa4M/giphy-downsized.gif"
     },
     {
       "id": 86,
       "word": "swing",
-      "pun": "you're getting the swing of things!"
+      "pun": "you're getting the swing of things!",
+      "gifs": "https://media.giphy.com/media/12aZh7T0YVereg/giphy-downsized.gif"
     },
     {
       "id": 87,
@@ -501,12 +531,14 @@
     {
       "id": 88,
       "word": "macarena",
-      "pun": "dale a tu cuerpo alegría"
+      "pun": "dale a tu cuerpo alegría",
+      "gifs": "https://media.giphy.com/media/Au0KrdgYiXo9G/giphy-downsized.gif"
     },
     {
       "id": 89,
       "word": "sword",
-      "pun": "Good show, my liege!"
+      "pun": "Good show, my liege!",
+      "gifs": "https://media.giphy.com/media/JbDv1r9JcLKIU/giphy-downsized.gif"
     },
     {
       "id": 90,
@@ -516,17 +548,21 @@
     },
     {
       "id": 91,
-      "word": "paint"
+      "word": "paint",
+      "pun": "you are acing this with flying colors",
+      "gifs": "https://media.giphy.com/media/xT9KVfk0D9TEQmRwUU/giphy-downsized.gif"
     },
     {
       "id": 92,
       "word": "tap dance",
-      "pun": "celebratory tap dance "
+      "pun": "celebratory tap dance ",
+      "gifs": "https://media.giphy.com/media/GDuNQlnzhwGPe/200w_d.gif"
     },
     {
       "id": 93,
       "word": "fart",
-      "pun": "unable to contain joy"
+      "pun": "unable to contain joy",
+      "gifs": "https://media.giphy.com/media/DaerlTBWPgGBO/giphy-downsized.gif"
     },
     {
       "id": 94,
@@ -536,7 +572,9 @@
     },
     {
       "id": 95,
-      "word": "wheelbarrow"
+      "word": "wheelbarrow",
+      "pun": "what where you carrying in that?!",
+      "gifs": "https://media.giphy.com/media/BdHkl4XaUkeXu/giphy-downsized.gif"
     },
     {
       "id": 96,
@@ -547,41 +585,49 @@
     {
       "id": 97,
       "word": "read",
+      "pun": "this team is reading eachothers minds!",
       "gifs": "https://media3.giphy.com/media/8dYmJ6Buo3lYY/200_d.gif"
     },
     {
       "id": 98,
       "word": "wizard of oz",
+      "pun": "somewhere over Broadway, someone is killing it at Chat Charades",
       "gifs": "https://media2.giphy.com/media/CpP3z1k6F2tdC/200_d.gif"
     },
     {
       "id": 99,
       "word": "gallop",
+      "pun": "you are galloping your way to mater Charader",
       "gifs": "https://media3.giphy.com/media/3o6Zt22e4ItsTIspBC/200_d.gif"
     },
     {
       "id": 100,
       "word": "river dance",
+      "pun": "those feet were flying",
       "gifs": "http://stream1.gifsoup.com/view6/3570484/wliia-lord-of-the-riverdance-o.gif"
     },
     {
       "id": 101,
-      "word": "birthday"
+      "word": "birthday",
+      "pun": "I not my birthday but I already had my present with this team's performance",
+      "gifs": "https://media.giphy.com/media/gImiuEnoNOmTm/giphy-tumblr.gif"
     },
     {
       "id": 102,
       "word": "hedgehog",
+      "pun": "What do hedgehogs eat for breakfast? Prickled eggs.",
       "gifs": "https://media2.giphy.com/media/3xz2BCohVTd7h2Kvfi/200_d.gif"
     },
     {
       "id": 103,
       "word": "pizza",
-      "pun": "getting a pizza the action!",
+      "pun": "He got angry at the Italian chef and gave him a pizzahis mind.",
       "gifs": "https://media3.giphy.com/media/10kxE34bJPaUO4/200_d.gif"
     },
     {
       "id": 104,
       "word": "blanket",
+      "pun": "Washing blankets with perfume is quilty until proven in a scent.",
       "gifs": "https://media0.giphy.com/media/RxraIcBraiVWw/200_d.gif"
     },
     {
@@ -598,47 +644,62 @@
     },
     {
       "id": 107,
-      "word": "bright"
+      "word": "bright",
+      "pun": "Whoever had the bright idea to invent the flashlight?",
+      "gifs": "https://media.giphy.com/media/l46CaUs3XUKHaPmak/giphy-downsized.gif"
     },
     {
       "id": 108,
       "word": "hurricane",
+      "pun": "A hurricane is a stick used to encourage speed.",
       "gifs": "https://media3.giphy.com/media/HmTLatwLWpTQk/200_d.gif"
     },
     {
       "id": 109,
-      "word": "rainbow"
+      "word": "rainbow",
+      "pun": "During his air test a young pilot flew through a rainbow. He passed with flying colors.",
+      "gifs": "https://media.giphy.com/media/SKGo6OYe24EBG/giphy.gif"
     },
     {
       "id": 110,
-      "word": "bump"
+      "word": "bump",
+      "pun": "Although I did not know the name of the boy who bumped his chin while playing a song in the children's handbell choir, his face rang a bell.",
+      "gifs": "https://media.giphy.com/media/Dnt2VnWFknFNm/giphy-downsized.gif"
     },
     {
       "id": 111,
-      "word": "kite"
+      "word": "kite",
+      "pun": "He wanted to fly a kite, but it was over his head.",
+      "gifs": "https://media.giphy.com/media/Dnt2VnWFknFNm/giphy-downsized.gif"
     },
     {
       "id": 112,
       "word": "rollercoaster",
+      "pun": "omg ! this team is an emitional rollercoaster",
       "gifs": "https://media1.giphy.com/media/2nJgpMuR2fVn2/200_d.gif"
     },
     {
       "id": 113,
       "word": "christmas",
+      "pun": "Deciding what Christmas gifts to give makes one present tense.",
       "gifs": "https://media2.giphy.com/media/5KuPVqoVRvQcg/200_d.gif"
     },
     {
       "id": 114,
-      "word": "light"
+      "word": "light",
+      "pun": "Lamp factories have light workloads.",
+      "gifs": "https://media.giphy.com/media/4jHXZ9aIKFaUM/giphy.gif"
     },
     {
       "id": 115,
       "word": "shadow",
+      "pun": "When he stepped out into the dusk with his three brothers he had a sudden four-shadowing.",
       "gifs": "https://media1.giphy.com/media/nXiQAyClUBuX6/200_d.gif"
     },
     {
       "id": 116,
       "word": "coffee",
+      "pun": "Ice cold coffee? Cool beans!",
       "gifs": "https://media0.giphy.com/media/Z6vszQ8Mweukw/200_d.gif"
     },
     {
@@ -650,20 +711,26 @@
     {
       "id": 118,
       "word": "shopping",
+      "pun": "Once you've seen one shopping center you've seen a mall.",
       "gifs": "https://media2.giphy.com/media/MEgGD8bV72hfq/200_d.gif"
     },
     {
       "id": 119,
-      "word": "cradle"
+      "word": "cradle",
+      "pun": "I really can't think of a pun for cradle",
+      "gifs": "https://media.giphy.com/media/WgRoCkgFX88mY/giphy-downsized.gif"
     },
     {
       "id": 120,
       "word": "makeup",
-      "pun": "on fleek!"
+      "pun": "on fleek!",
+      "gifs": "https://media.giphy.com/media/3og0IJqTlEDNt5ZZv2/giphy-downsized.gif"
     },
     {
       "id": 121,
-      "word": "shuffle"
+      "word": "shuffle",
+      "pun": "How does a card player party? They shuffle.",
+      "gifs": "https://media.giphy.com/media/Y6uz9huusUQko/giphy.gif"
     },
     {
       "id": 122,
@@ -674,43 +741,56 @@
     {
       "id": 123,
       "word": "marriage",
+      "pun": "Pre-arranged marriages pre-pair people for the future.",
       "gifs": "https://media3.giphy.com/media/vTfFCC3rSfKco/200_d.gif"
     },
     {
       "id": 124,
-      "word": "slice"
+      "word": "slice",
+      "pun": "Golfers hate cake because they might get a slice.",
+      "gifs": "https://media.giphy.com/media/avjZmIfYIeCsg/giphy-downsized.gif"
     },
     {
       "id": 125,
       "word": "drool",
+      "pun": "don't be a drool, think before you do.",
       "gifs": "https://media3.giphy.com/media/ZIaHApfoneZZ6/200_d.gif"
     },
     {
       "id": 126,
-      "word": "mash"
+      "word": "mash",
+      "pun": "mashing that charades game I see",
+      "gifs": "https://media.giphy.com/media/RTF67FbLIvieI/giphy-downsized.gif"
     },
     {
       "id": 127,
       "word": "slip n’ slide",
+      "pun": "you think you can just slip n' slide into this game and be so good?? I don't think so.",
       "gifs": "https://media1.giphy.com/media/q9fxyuwQ8KoNO/200_d.gif"
     },
     {
       "id": 128,
       "word": "electric slide",
-      "gifs": "https://media2.giphy.com/media/c5eqVJN7oNLTq/200_d.gif"
+      "pun": "one is typing and the other one is acting, but this is the most cordinated electric slide i've ever seen.",
+      "gifs": "https://media.giphy.com/media/3ohhwLEFSk0JAMd0vC/giphy-downsized.gif"
     },
     {
       "id": 129,
       "word": "measure",
-      "gifs": "https://media1.giphy.com/media/l4KhVTVQkGRQN16FO/200_d.gif"
+      "pun": "A king measures his line with a ruler.",
+      "gifs": "https://media2.giphy.com/media/c5eqVJN7oNLTq/200_d.gif"
     },
     {
       "id": 130,
-      "word": "smear"
+      "word": "smear",
+      "pun": "look at you, smearing your talents in front of me like that!",
+      "gifs": "https://media1.giphy.com/media/l4KhVTVQkGRQN16FO/200_d.gif"
     },
     {
       "id": 131,
-      "word": "excitement"
+      "word": "excitement",
+      "pun": "My face when you steped into frame",
+      "gifs": "https://media.giphy.com/media/q4sdF9tchap6E/giphy-downsized.gif"
     },
     {
       "id": 132,
@@ -721,11 +801,13 @@
     {
       "id": 133,
       "word": "spider",
+      "pun": "The tarantula found his partner online. He spider on the web.",
       "gifs": "https://media1.giphy.com/media/rAbKGNGM99DBC/200_d.gif"
     },
     {
       "id": 134,
       "word": "fight club",
+      "pun": "...",
       "gifs": "https://media0.giphy.com/media/1AfLx8dLTVoHK/200_d.gif"
     },
     {
@@ -749,20 +831,26 @@
     {
       "id": 138,
       "word": "motorcycle",
+      "pun": "When Ruth fell off the motorcycle her boyfriend drove on Ruthlessly.",
       "gifs": "https://media1.giphy.com/media/26BRqA4joCajuQfuw/200_d.gif"
     },
     {
       "id": 139,
-      "word": "trampoline"
+      "word": "trampoline",
+      "pun": "I got a job with a company that manufactures trampolines. Now I'll have something to fall back on.",
+      "gifs": "https://media.giphy.com/media/dZ3s1d6bsqQDK/giphy-downsized.gif"
     },
     {
       "id": 140,
       "word": "flashlight",
+      "pun": "I should have been sad when my flashlight batteries died, but I was delighted.",
       "gifs": "https://media0.giphy.com/media/6D9Z1s3pJDYVa/200_d.gif"
     },
     {
       "id": 141,
-      "word": "nightmare"
+      "word": "nightmare",
+      "pun": "The cowboy took hay to bed to feed his nightmares.",
+      "gifs": "https://media.giphy.com/media/2iA1ezVT5INuE/giphy-downsized.gif"
     },
     {
       "id": 142,
@@ -773,36 +861,44 @@
     {
       "id": 143,
       "word": "garden",
+      "pun": "What do you call the garden police? Lawn and Order.",
       "gifs": "https://media1.giphy.com/media/OuHorx2fAJK1i/200_d.gif"
     },
     {
       "id": 144,
       "word": "nosey",
+      "pun": "the knows nose",
       "gifs": "https://media0.giphy.com/media/3o6ZtiEg0AvX6hQqM8/200_d.gif"
     },
     {
       "id": 145,
-      "word": "window"
+      "word": "window",
+      "pun": "The window cleaner's boss often did spot checks.",
+      "gifs": "https://media.giphy.com/media/3ohjUXgeAydFaQk0k8/giphy-downsized.gif"
     },
     {
       "id": 146,
       "word": "giraffe",
+      "pun": "re giraffes good pets or are they too high maintenance?",
       "gifs": "https://media1.giphy.com/media/JmBXdjfIblJDi/200_d.gif"
     },
     {
       "id": 147,
       "word": "overwhelmed",
+      "pun": "I'm overwhelmed, I need to start a diet.",
       "gifs": "https://media0.giphy.com/media/5ArXi4OrKgfSM/200_d.gif"
     },
     {
       "id": 148,
       "word": "yo-yo",
+      "pun": "my mood.",
       "gifs": "https://media1.giphy.com/media/xT8qBcsHNO3ulvMuUE/200_d.gif"
     },
     {
       "id": 149,
       "word": "heavy",
-      "pun": "WEIGH TO GO!!!"
+      "pun": "WEIGH TO GO!!!",
+      "gifs": "https://media.giphy.com/media/MmUw0BCjKJJde/giphy.gif"
     },
     {
       "id": 150,
