@@ -37,7 +37,7 @@ socket.on('connect', function () {
 // 	debug:3,
 // });
 
-var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, secure:true, path: '/peer' });
+var peer = new Peer('local',{host: 'two.grrrau.co', port: 7002, secure:true, path: '/peer' });
 
 peer.on('open', function (lID) {
 	console.log('mirrorID is: ' + lID);

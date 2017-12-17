@@ -1,6 +1,6 @@
 var PeerServer = require('peer').PeerServer;
 var server = PeerServer({
-	port: 9000, 
+	port: 7002, 
 	path: '/peer', 
 	proxied: true,
 	secure:true,
