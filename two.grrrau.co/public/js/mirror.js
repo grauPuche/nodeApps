@@ -53,13 +53,13 @@ socket.on('connect', function () {
 });
 
 //local
-var peer = new Peer('local', {
-	host: 'two.grrrau.co',
-	port: 9000,
-	path: '/peer'
-});
+// var peer = new Peer('local', {
+// 	host: 'localhost',
+// 	port: 9000,
+// 	path: '/peer'
+// });
 //online 
-//var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
+var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
 peer.on('open', function (lID) {
 	console.log('liveID is: ' + lID);
