@@ -3,5 +3,6 @@ var server = PeerServer({
 	port: 9000, 
 	path: '/peer', 
 	proxied: true,
-	secure:true
+	secure:true,
+	debug: 2
 })
