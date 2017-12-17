@@ -37,8 +37,13 @@ socket.on('connect', function () {
 // 	debug:3,
 // });
 
-var peer = new Peer('local',{host: 'one.grrrau.co', port: 443, secure:true, path: '/peer' });
-
+var peer = new Peer('live',{
+	host: 'one.grrrau.co', 
+	port: 443, 
+	secure:true, 
+	path: '/peer',
+	debug: 2
+});
 peer.on('open', function (lID) {
 	console.log('liveID is: ' + lID);
 	socket.emit('liveID', lID)
