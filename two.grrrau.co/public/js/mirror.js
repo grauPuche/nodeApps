@@ -54,7 +54,7 @@ socket.on('connect', function () {
 
 //local
 var peer = new Peer('local', {
-	host: 'localhost',
+	host: 'two.grrrau.co',
 	port: 9000,
 	path: '/peer'
 });

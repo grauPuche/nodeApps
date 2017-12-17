@@ -18,7 +18,7 @@ $.ajax({
 		// })
 		console.log(word.list[n].word);
 		words = word
-	}
+	}	
 })
 
 socket.on('new guess', function(guess){
@@ -52,4 +52,4 @@ socket.on('response',function(response){
 	$('html,body').animate({
         scrollTop: $("#empty").offset().top},
         'slow');
-})
+})  

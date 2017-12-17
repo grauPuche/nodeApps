@@ -56,11 +56,11 @@ body {
 	color: #f0f0f0;
 }
 
-.sentMsgs {
-	/* background-color: blue; */
-	/* height: 85%; */
-	/* overflow: hidden; */
-}
+/* .sentMsgs {
+	background-color: blue;
+	height: 85%;
+	overflow: hidden;
+} */
 
 .input {
 	/* background-color: green; */
@@ -305,7 +305,7 @@ input[type=text]:focus {
 
 #wordSlider::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	appearance: none;
+	/* appearance: none; */
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
