@@ -63,6 +63,10 @@ socket.on('connect', function () {
 var peer = new Peer({key: 'gx953psgv62prpb9',secure: 'true'});
 // var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
+peer.on('open', function(id) {
+	console.log('My peer ID is: ' + id);
+  });
+
 peer.on('open', function (lID) {
 	console.log('liveID is: ' + lID);
 	socket.emit('liveID', lID)
