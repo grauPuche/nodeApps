@@ -40,15 +40,15 @@ socket.on('connect', function () {
 var peer = new Peer('local',{host: 'one.grrrau.co', port: 443, secure:true, path: '/peer' });
 
 peer.on('open', function (lID) {
-	console.log('mirrorID is: ' + lID);
-	socket.emit('mirrorID', lID)
-	console.log('mirrorID send!')
+	console.log('liveID is: ' + lID);
+	socket.emit('liveID', lID)
+	console.log('liveID send!')
 });
 
-socket.on('liveID', function (mID) {
-	console.log('liveID is ' + mID)
+socket.on('mirrorID', function (mID) {
+	console.log('mirrorID is ' + mID)
 	var call = peer.call(mID, stream);
-	console.log('liveID connected!')
+	console.log('mirrorID connected!')
 });
 
 peer.on('call', function (call) {
