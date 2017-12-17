@@ -5,7 +5,9 @@ var response;
 var n = 0;
 var socket = io();
 
-
+socket.on('connect', function () {
+	console.log("socket connected");
+});
 
 $.getJSON("assets/wordList.json",function(word){
 	console.log(word);
