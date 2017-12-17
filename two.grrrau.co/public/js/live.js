@@ -31,7 +31,7 @@ socket.on('connect', function () {
 
 //online 
 
-var peer = new Peer({key: 'gx953psgv62prpb9',secure: 'true'});
+var peer = new Peer({key: 'gx953psgv62prpb9'});
 // var peer = new Peer('remote',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
 peer.on('open', function (lID) {

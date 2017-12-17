@@ -60,18 +60,14 @@ socket.on('connect', function () {
 // });
 
 //online 
-var peer = new Peer({key: 'gx953psgv62prpb9',secure: 'true'});
+var peer = new Peer({key: 'gx953psgv62prpb9'});
 // var peer = new Peer('local',{host: 'two.grrrau.co', port: 9000, path: '/peer'});
 
-peer.on('open', function(id) {
-	console.log('My peer ID is: ' + id);
-  });
-
-// peer.on('open', function (lID) {
-// 	console.log('liveID is: ' + lID);
-// 	socket.emit('liveID', lID)
-// 	console.log('liveID send!')
-// });
+peer.on('open', function (lID) {
+	console.log('liveID is: ' + lID);
+	socket.emit('liveID', lID)
+	console.log('liveID send!')
+});
 
 socket.on('mirrorID', function (mID) {
 	console.log('mirrorID is ' + mID)
