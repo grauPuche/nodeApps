@@ -1,14 +1,8 @@
-var http = require('http'),
-    fs = require('fs');
+const express = require('express');
+const app = express();
+const http = require('http').Server(app);
+const port = process.env.PORT || 7003;
 
+app.get('/', (req, res) => res.send('just visited lligam.grrrau.co '))
 
-fs.readFile('./test.txt', function (err, html) {
-    if (err) {
-        throw err;
-    }
-    http.createServer(function(request, response) {
-        response.writeHeader(200, {"Content-Type": "text/html"});
-        response.write(html);
-        response.end();
-    }).listen(7003);
-});
+http.listen(port, () => console.log('listening on port ' + port));
