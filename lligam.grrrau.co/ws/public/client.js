@@ -15,8 +15,7 @@ $(function () {
   };
 
   connection.onmessage = function (message) {
-    // try to decode json (I assume that each message
-    // from server is json)
+    // try to decode json (I assume that each message from server is json)
     try {
       var json = JSON.parse(message.data);
     } catch (e) {

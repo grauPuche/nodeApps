@@ -1,5 +1,5 @@
 <html>
-    
+
 <head>
     <meta charset="utf-8">
     <style>
@@ -7,13 +7,23 @@
             color: blue;
             font-size: 90px
         }
-        h4 em{
+
+        h4 em {
             color: blueviolet;
             font-size: 75px;
             margin-left: 30px;
         }
-    </style>
 
+        table {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            font-size: 50px;
+        }
+        hr{
+            margin-bottom: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,13 +35,41 @@
         <strong>ESP8266</strong>
     </h3>
     <hr>
-    <h4>the data is
-        <br>
-        <em>0000</em>
-    </h4>
+    <table>
+        <tr>
+            <th>ESP8266</th>
+        </tr>
+        <tr>
+            <td id="con">CONNECTED</td>
+        </tr>
+        <tr>
+            <td id="dis">DISCONNECTED</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>DATA</th>
+        </tr>
+        <tr>
+            <td id="x">X,
+                <strong>0000</strong>
+            </td>
+        </tr>
+        <tr>
+            <td id="y">Y,
+                <strong>0000</strong>
+            </td>
+        </tr>
+        <tr>
+            <td id="k">K,
+                <strong>LOW</strong>
+            </td>
+        </tr>
+    </table>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
-    <script src="client.js"></script>    
+    <script src="client.js"></script>
 </body>
 
 </html>

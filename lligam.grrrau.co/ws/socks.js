@@ -6,7 +6,7 @@ var server = http.createServer(function(request, response) {
   // server we don't have to implement anything.
 });
 server.listen(7013, function() { 
-  console.log((new Date()) + " Server is listening on port 3001");
+  console.log((new Date()) + " Server is listening on port 7013");
 });
 
 // create the server
@@ -25,6 +25,7 @@ wsServer.on('request', function(request) {
   connection.on('message', function(message) {
     if (message.type === 'utf8') {
       // process WebSocket message
+      console.log('new message: '+ message)
     }
   });
 
