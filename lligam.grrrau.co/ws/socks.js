@@ -5,7 +5,7 @@ var server = http.createServer(function(request, response) {
   // process HTTP request. Since we're writing just WebSockets
   // server we don't have to implement anything.
 });
-server.listen(3001, function() { 
+server.listen(7013, function() { 
   console.log((new Date()) + " Server is listening on port 3001");
 });
 

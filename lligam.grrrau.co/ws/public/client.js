@@ -2,11 +2,11 @@ $(function () {
   // if user is running mozilla then use it's built-in WebSocket
   window.WebSocket = window.WebSocket || window.MozWebSocket;
 
-  var connection = new WebSocket('ws://127.0.0.1:3001');
+  var connection = new WebSocket('ws://127.0.0.1:7013');
 
   connection.onopen = function () {
 	// connection is opened and ready to use
-	console.log("connection established")
+	console.log("YAY! connection established")
   };
 
   connection.onerror = function (error) {
