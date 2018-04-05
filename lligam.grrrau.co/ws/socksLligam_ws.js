@@ -1,11 +1,11 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
 
-var server = http.createServer(function(request, response) {
+var server = http.createServer(function (request, response) {
   // process HTTP request. Since we're writing just WebSockets
   // server we don't have to implement anything.
 });
-server.listen(7013, function() { 
+server.listen(7013, function () {
   console.log((new Date()) + " Server is listening on port 7013");
 });
 
@@ -15,21 +15,27 @@ wsServer = new WebSocketServer({
 });
 
 // WebSocket server
-wsServer.on('request', function(request) {
+wsServer.on('request', function (request) {
   var connection = request.accept(null, request.origin);
 
   console.log("client connected")
 
   // This is the most important callback for us, we'll handle
   // all messages from users here.
-  connection.on('message', function(message) {
-    //if (message.type === 'utf8') {
+  connection.on('message', function (message) {
+
+    if (message.type === 'utf8') {
       // process WebSocket message
-      console.log('new message: '+ message)
-    // }
+      console.log('new message: ' + message)
+    }
+
+    if (message.type === String) {
+      console.log('Received data string' + message);
+    }
+
   });
 
-  connection.on('close', function(connection) {
+  connection.on('close', function (connection) {
     // close user connection
     console.log("client disconnected")
   });
@@ -39,7 +45,7 @@ wsServer.on('request', function(request) {
 
 
 
- // "use strict";
+// "use strict";
 
 // // Optional. You will see this name in eg. 'ps' or 'top' command
 // process.title = 'joyData';
@@ -93,8 +99,8 @@ wsServer.on('request', function(request) {
 //   // we need to know client index to remove them on 'close' event
 //   var index = clients.push(connection) - 1;
 //   console.log((new Date()) + ' Connection accepted.');
-  
-  
+
+
 //   // // user sent some message
 //   // connection.on('message', function(message) {
 //   //   if (message.type === 'utf8') { // accept only text
@@ -111,7 +117,7 @@ wsServer.on('request', function(request) {
 //   //     } else { // log and broadcast the message
 //   //       console.log((new Date()) + ' Received Message from '
 //   //                   + userName + ': ' + message.utf8Data);
-        
+
 //   //       // we want to keep history of all sent messages
 //   //       var obj = {
 //   //         time: (new Date()).getTime(),
