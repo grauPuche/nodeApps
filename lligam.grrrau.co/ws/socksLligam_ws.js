@@ -27,17 +27,11 @@ wsServer.on('request', function (request) {
     if (message.type === 'utf8') {
       // process WebSocket message
       console.log('new message:')
-      console.log(Object.keys(message));
-    }
+      console.log(Object.keys(message))
+      console.log('the message is:' + message.data )
+      console.log()
 
-    if (message.type === String) {
-      console.log('Received data string: ' + message);
     }
-
-    if (message.type === Object) {
-      console.log('Received Object: ' + message);
-    }
-
   });
 
   connection.on('close', function (connection) {
