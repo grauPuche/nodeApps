@@ -28,7 +28,7 @@ wsServer.on('request', function (request) {
       // process WebSocket message
       console.log('new message:')
       console.log(Object.keys(message))
-      console.log('the message is:' + message.data )
+      console.log('the message is:' + message.utf8Data )
       console.log()
 
     //}
