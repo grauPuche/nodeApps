@@ -23,10 +23,10 @@ wsServer.on('request', function(request) {
   // This is the most important callback for us, we'll handle
   // all messages from users here.
   connection.on('message', function(message) {
-    if (message.type === 'utf8') {
+    //if (message.type === 'utf8') {
       // process WebSocket message
-      console.log('new message: '+ message)
-    }
+      console.log('new message: '+ message[0])
+    // }
   });
 
   connection.on('close', function(connection) {
