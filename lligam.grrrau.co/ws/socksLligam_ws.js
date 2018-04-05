@@ -30,7 +30,11 @@ wsServer.on('request', function (request) {
     }
 
     if (message.type === String) {
-      console.log('Received data string' + message);
+      console.log('Received data string: ' + message);
+    }
+
+    if (message.type === Object) {
+      console.log('Received Object: ' + message);
     }
 
   });
