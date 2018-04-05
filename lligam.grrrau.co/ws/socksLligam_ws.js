@@ -26,7 +26,10 @@ wsServer.on('request', function (request) {
 
     if (message.type === 'utf8') {
       // process WebSocket message
-      console.log('new message: ' + message.data)
+      console.log('new message:')
+      for (var n in message.keys()){
+        console.log(n)
+      }
     }
 
     if (message.type === String) {
