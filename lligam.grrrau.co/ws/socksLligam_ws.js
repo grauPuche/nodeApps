@@ -24,14 +24,14 @@ wsServer.on('request', function (request) {
   // all messages from users here.
   connection.on('message', function (message) {
 
-    if (message.type === 'utf8') {
+    //if (message.type === 'utf8') {
       // process WebSocket message
       console.log('new message:')
       console.log(Object.keys(message))
       console.log('the message is:' + message.data )
       console.log()
 
-    }
+    //}
   });
 
   connection.on('close', function (connection) {
