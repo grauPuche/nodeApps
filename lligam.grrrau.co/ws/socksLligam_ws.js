@@ -28,7 +28,7 @@ wsServer.on("request", function(request) {
     // console.log("new message: " + colors.yellow(message.utf8Data));
     values = message.utf8Data.split(',')
     console.log(colors.blue("X" + provisionalValueForX) + colors.green(" Y" + values[0]) + colors.red(" K" + values[1]));
-    console.log(colors.yellow(Object.keys(values))
+    console.log(colors.yellow(Object.keys(values)))
 
   });
 
