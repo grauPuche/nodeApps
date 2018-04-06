@@ -1,6 +1,6 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
-var colors = require('colors');
+var colors = require('colors/safe');
 
 var server = http.createServer(function (request, response) {
   // process HTTP request. Since we're writing just WebSockets
@@ -24,15 +24,14 @@ wsServer.on('request', function (request) {
   // This is the most important callback for us, we'll handle
   // all messages from users here.
   connection.on('message', function (message) {
-    var MSG
-    message.utf8Data = MSG
+
     //if (message.type === 'utf8') {
       // process WebSocket message
       console.log(' ')
       console.log('NEW MESSAGE')
       console.log('======')
       console.log(Object.keys(message))
-      console.log('the message is: ' + MSG.yellow )
+      console.log(colors.yellow('the message is: ' + message.utf8Data) )
       console.log('======')
       console.log(' ')
     //}
