@@ -9,7 +9,7 @@ var server = http.createServer(function(request, response) {
 });
 
 server.listen(port, function() {
-  console.log(new Date() + " Server is listening on port " + color.yellow(port));
+  console.log(new Date() + " Server is listening on port " + colors.yellow(port));
 });
 
 // create the server

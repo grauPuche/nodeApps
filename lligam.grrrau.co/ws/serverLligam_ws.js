@@ -11,5 +11,5 @@ app.get('/joy', function(req, res) {
 app.use('/joy', express.static(public));
 
 app.listen(port, function() {
-    console.log(new Date() + " Server is listening on port " + color.yellow(port));
+    console.log(new Date() + " Server is listening on port " + colors.yellow(port));
   });
