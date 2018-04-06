@@ -23,6 +23,8 @@ var yaxix = 0;
 
 // WebSocket server
 wsServer.on("request", function(request) {
+  console.log((new Date()) + ' connection from origin '
+      + request.origin + '.')
   var connection = request.accept(null, request.origin);
 
   console.log("client " + colors.green("connected"));
@@ -50,6 +52,8 @@ wsServer.on("request", function(request) {
       JSON.stringify({ x: provisionalValueForX, y: yaxix, k: butt })
     );
     console.log(" ");
+
+
   });
 
   connection.on("close", function(connection) {
