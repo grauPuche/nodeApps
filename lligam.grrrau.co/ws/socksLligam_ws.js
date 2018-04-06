@@ -19,7 +19,7 @@ wsServer = new WebSocketServer({
 wsServer.on('request', function (request) {
   var connection = request.accept(null, request.origin);
 
-  console.log("client connected")
+  console.log("client " + colors.green ('connected'))
 
   // This is the most important callback for us, we'll handle
   // all messages from users here.
@@ -28,11 +28,11 @@ wsServer.on('request', function (request) {
     //if (message.type === 'utf8') {
       // process WebSocket message
       console.log(' ')
-      console.log('NEW MESSAGE')
-      console.log('======')
-      console.log(Object.keys(message))
-      console.log('the message is: ' + colors.yellow(message.utf8Data) )
-      console.log('======')
+      // console.log('NEW MESSAGE')
+      // console.log('======')
+      // console.log(Object.keys(message))
+      console.log('new message: ' + colors.yellow(message.utf8Data) )
+      // console.log('======')
       console.log(' ')
     //}
 
@@ -40,7 +40,7 @@ wsServer.on('request', function (request) {
 
   connection.on('close', function (connection) {
     // close user connection
-    console.log("client disconnected")
+    console.log("client " + colors.red ('disconnected'))
   });
 });
 
