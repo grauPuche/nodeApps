@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var public = __dirname + "/public/";
+var port = 7003;
 
 app.get('/joy', function(req, res) {
     res.sendFile(path.join(public + "index.html"));
@@ -9,4 +10,6 @@ app.get('/joy', function(req, res) {
 
 app.use('/joy', express.static(public));
 
-app.listen(7003);
+app.listen(port, function() {
+    console.log(new Date() + " Server is listening on port " + color.yellow(port));
+  });

@@ -1,13 +1,15 @@
 var WebSocketServer = require("websocket").server;
 var http = require("http");
 var colors = require("colors/safe");
+var port = 7013;
 
 var server = http.createServer(function(request, response) {
   // process HTTP request. Since we're writing just WebSockets
   // server we don't have to implement anything.
 });
-server.listen(7013, function() {
-  console.log(new Date() + " Server is listening on port 7013");
+
+server.listen(port, function() {
+  console.log(new Date() + " Server is listening on port " + color.yellow(port));
 });
 
 // create the server
