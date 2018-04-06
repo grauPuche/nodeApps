@@ -18,6 +18,8 @@ wsServer = new WebSocketServer({
 var provisionalValueForX = 125;
 var values = [];
 var butt = false;
+var xaxis = 0;
+var yaxix = 0;
 
 // WebSocket server
 wsServer.on("request", function(request) {
@@ -36,6 +38,8 @@ wsServer.on("request", function(request) {
     );
     // console.log(colors.yellow(Object.keys(values)))
 
+    yaxix = parseInt(values[0],10);
+
     if (values[1] === '0') {
       butt = true;
     } else {
@@ -43,7 +47,7 @@ wsServer.on("request", function(request) {
     }
 
     console.log(
-      JSON.stringify({ x: provisionalValueForX, y: values[0], k: butt })
+      JSON.stringify({ x: provisionalValueForX, y: yaxix, k: butt })
     );
     console.log(" ");
   });
