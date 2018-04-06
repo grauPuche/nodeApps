@@ -31,7 +31,7 @@ wsServer.on('request', function (request) {
       console.log('NEW MESSAGE')
       console.log('======')
       console.log(Object.keys(message))
-      console.log(colors.yellow('the message is: ' + message.utf8Data) )
+      console.log('the message is: ' + colors.yellow(message.utf8Data) )
       console.log('======')
       console.log(' ')
     //}
