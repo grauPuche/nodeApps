@@ -36,7 +36,7 @@ wsServer.on("request", function(request) {
     );
     // console.log(colors.yellow(Object.keys(values)))
 
-    if (values[1] === 0) {
+    if (values[1] === '0') {
       butt = true;
     } else {
       butt = false;
