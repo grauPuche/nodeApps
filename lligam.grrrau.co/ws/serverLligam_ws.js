@@ -6,11 +6,11 @@ var port = 7003;
 var colors = require("colors/safe");
 
 
-app.get('/joy', function(req, res) {
+app.get('/', function(req, res) {
     res.sendFile(path.join(public + "index.html"));
 });
 
-app.use('/joy', express.static(public));
+app.use('/', express.static(public));
 
 app.listen(port, function() {
     console.log(new Date() + " Server is listening on port " + colors.yellow(port));
