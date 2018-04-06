@@ -6,13 +6,13 @@ $(function () {
 
   connection.onopen = function () {
 	// connection is opened and ready to use
-	console.log("YAY! connection established")
+  console.log("YAY! connection established")
+  connection.send('~IM,~WEB')
   };
 
   connection.onerror = function (error) {
 	// an error occurred when sending/receiving data
   console.log("connection error ma boi")
-  connection.send('~IM,~WEB')
   };
 
   connection.onmessage = function (message) {
