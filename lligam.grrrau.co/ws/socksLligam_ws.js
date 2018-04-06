@@ -58,6 +58,7 @@ wsServer.on("request", function(request) {
 
   connection.on("close", function(connection) {
     // close user connection
-    console.log("client " + colors.red("disconnected"));
+    console.log("client " + colors.red("disconnected") /n);
+    console.log(' ');
   });
 });
