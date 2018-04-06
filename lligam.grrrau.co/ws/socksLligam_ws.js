@@ -24,12 +24,12 @@ wsServer.on("request", function(request) {
 
   console.log("client " + colors.green("connected"));
 
-  // This is the most important callback for us, we'll handle
-  // all messages from users here.
   connection.on("message", function(message) {
     // console.log("new message: " + colors.yellow(message.utf8Data));
     values = message.utf8Data.split(',')
-    console.log(colors.blue("    X" + provisionalValueForX) + colors.green(" Y" + values[0]) + colors.red(" K" + values[1]));
+    console.log(colors.blue("X" + provisionalValueForX) + colors.green(" Y" + values[0]) + colors.red(" K" + values[1]));
+    console.log(colors.yellow(values))
+
   });
 
   connection.on("close", function(connection) {
