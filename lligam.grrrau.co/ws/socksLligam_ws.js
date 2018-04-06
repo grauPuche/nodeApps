@@ -17,23 +17,35 @@ wsServer = new WebSocketServer({
 
 var provisionalValueForX = 125;
 var values = [];
+var butt = false;
 
 // WebSocket server
 wsServer.on("request", function(request) {
   var connection = request.accept(null, request.origin);
 
   console.log("client " + colors.green("connected"));
-  console.log(' ')
+  console.log(" ");
 
   connection.on("message", function(message) {
     // console.log("new message: " + colors.yellow(message.utf8Data));
-    values = message.utf8Data.split(',')
-    console.log(colors.blue("X" + provisionalValueForX) + colors.green(" Y" + values[0]) + colors.red(" K" + values[1]));
+    values = message.utf8Data.split(",");
+    console.log(
+      colors.blue("X" + provisionalValueForX) +
+        colors.green(" Y" + values[0]) +
+        colors.red(" K" + values[1])
+    );
     // console.log(colors.yellow(Object.keys(values)))
-    console.log(JSON.stringify({ x: provisionalValueForX, y: values[0], k: values[1] }));
-    console.log(' ')
 
+    if (values[1] === 0) {
+      butt = true;
+    } else {
+      butt = false;
+    }
 
+    console.log(
+      JSON.stringify({ x: provisionalValueForX, y: values[0], k: butt })
+    );
+    console.log(" ");
   });
 
   connection.on("close", function(connection) {
