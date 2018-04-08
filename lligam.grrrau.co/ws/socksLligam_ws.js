@@ -41,7 +41,7 @@ wsServer.on("request", function(request) {
   connection.on("message", function(message) {
     if (message.type === "utf8") {
       if (clientName === false) {
-        clientName = htmlEntities(message.utf8Data);
+        clientName = message.utf8Data;
         console.log("the client is " + color.purple(clientName));
       } else {
         // console.log("new message: " + colors.yellow(message.utf8Data));
