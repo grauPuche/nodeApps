@@ -77,7 +77,16 @@ wsServer.on("request", function(request) {
 
   connection.on("close", function(connection) {
     // close user connection
-    console.log("client " + colors.red("disconnected"));
+    console.log("client " );
     console.log(" ");
   });
+
+  connection.on('close', function(connection) {
+    if (userName !== false) {
+      console.log(clientName + ' from ' + connection.remoteAddress + colors.red("disconnected"));
+      // remove client from the list of connected clients
+      clients.splice(index, 1);
+    }
+  });
+
 });
