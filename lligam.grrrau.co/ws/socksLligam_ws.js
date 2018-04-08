@@ -82,7 +82,7 @@ wsServer.on("request", function(request) {
   });
 
   connection.on('close', function(connection) {
-    if (userName !== false) {
+    if (clientName !== false) {
       console.log(clientName + ' from ' + connection.remoteAddress + colors.red("disconnected"));
       // remove client from the list of connected clients
       clients.splice(index, 1);
