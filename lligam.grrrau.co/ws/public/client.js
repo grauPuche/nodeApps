@@ -8,7 +8,7 @@ $(function () {
 	// connection is opened and ready to use
   console.log("YAY! connection established")
   connection.send('1,~WEB')
-  ('#serverStatus').html('ONLINE');
+  $('#serverStatus').html('ONLINE');
   };
 
   connection.onerror = function (error) {
