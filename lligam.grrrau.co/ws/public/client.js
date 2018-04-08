@@ -34,11 +34,9 @@ $(function() {
     if (json.x) {
       xaxis = json.x;
       $("#x strong").html(xaxis);
-    } else if (json.type === "y") {
-      yaxis = json.data;
+      yaxis = json.y;
       $("#y strong").html(yaxis);
-    } else if (json.type === "k") {
-      butt = json.data;
+      butt = json.k;
       $("#k strong").html(butt);
     } else {
       console.log("Hmm..., I've never seen JSON like this:", json);
