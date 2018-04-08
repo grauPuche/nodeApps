@@ -7,7 +7,7 @@ $(function () {
   connection.onopen = function () {
 	// connection is opened and ready to use
   console.log("YAY! connection established")
-  connection.send('~IM,~WEB')
+  connection.send('1,~WEB')
   };
 
   connection.onerror = function (error) {
