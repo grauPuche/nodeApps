@@ -50,10 +50,12 @@ wsServer.on("request", function(request) {
       butt = false;
     }
 
-    console.log(
-      JSON.stringify({ x: provisionalValueForX, y: yaxix, k: butt })
-    );
-    console.log(" ");
+    var allValues = JSON.stringify({ x: provisionalValueForX, y: yaxix, k: butt });
+
+    connection.sendUTF(allValues);
+
+    console.log('just send: ' + colors.yellow(allValues));
+    console.log('');
 
 
   });
