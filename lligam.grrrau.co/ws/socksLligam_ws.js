@@ -29,7 +29,7 @@ var clients = [];
 
 // WebSocket server
 wsServer.on("request", function(request) {
-  console.log(" connection from " + request.origin);
+  console.log("connection from " + request.origin);
   var connection = request.accept(null, request.origin);
 
   var index = clients.push(connection) - 1;
@@ -41,7 +41,7 @@ wsServer.on("request", function(request) {
     if (message.type === "utf8") {
       if (clientName === false) {
         clientName = message.utf8Data;
-        console.log(colors.magenta(clientName) + ' connected');
+        console.log(colors.magenta(clientName) + colors.yellow(' connected'));
         console.log(" ");
       } else {
         // console.log("new message: " + colors.yellow(message.utf8Data));
