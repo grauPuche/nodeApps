@@ -19,6 +19,7 @@ $(function () {
     // try to decode json (I assume that each message from server is json)
     try {
       var json = JSON.parse(message.data);
+      console.log(message.data)
     } catch (e) {
       console.log('This doesn\'t look like a valid JSON: ',
           message.data);

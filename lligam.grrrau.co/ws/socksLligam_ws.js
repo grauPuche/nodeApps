@@ -55,7 +55,7 @@ wsServer.on("request", function(request) {
     connection.sendUTF(allValues);
 
     console.log('just send: ' + colors.yellow(allValues));
-    console.log('');
+    console.log(' ');
 
 
   });
