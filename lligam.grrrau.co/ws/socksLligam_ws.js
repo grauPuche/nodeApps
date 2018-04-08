@@ -83,7 +83,7 @@ wsServer.on("request", function(request) {
 
   connection.on('close', function(connection) {
     if (clientName !== false) {
-      console.log(clientName + ' from ' + connection.remoteAddress + colors.red("disconnected"));
+      console.log(colors.magenta(clientName)  + colors.red(' disconnected'));
       // remove client from the list of connected clients
       clients.splice(index, 1);
     }
