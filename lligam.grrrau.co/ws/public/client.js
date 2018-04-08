@@ -31,8 +31,8 @@ $(function() {
       return;
     }
 
-    if (json.type === "x") {
-      xaxis = json.data;
+    if (json.x) {
+      xaxis = json.x;
       $("#x strong").html(xaxis);
     } else if (json.type === "y") {
       yaxis = json.data;
