@@ -42,7 +42,7 @@ wsServer.on("request", function(request) {
     if (message.type === "utf8") {
       if (clientName === false) {
         clientName = message.utf8Data;
-        console.log("the client is " + color.purple(clientName));
+        console.log("the client is " + colors.purple(clientName));
       } else {
         // console.log("new message: " + colors.yellow(message.utf8Data));
         values = message.utf8Data.split(",");
