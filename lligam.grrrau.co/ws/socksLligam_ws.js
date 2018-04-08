@@ -29,20 +29,20 @@ var clients = [];
 
 // WebSocket server
 wsServer.on("request", function(request) {
-  console.log(new Date() + " connection from origin " + request.origin + ".");
+  console.log(" connection from " + request.origin);
   var connection = request.accept(null, request.origin);
 
   var index = clients.push(connection) - 1;
   var clientName = false;
 
-  console.log("client " + colors.green("connected"));
-  console.log(" ");
+  // console.log(colors.yellow("new client"));
 
   connection.on("message", function(message) {
     if (message.type === "utf8") {
       if (clientName === false) {
         clientName = message.utf8Data;
-        console.log("the client is " + colors.magenta(clientName));
+        console.log(colors.magenta(clientName) + ' connected');
+        console.log(" ");
       } else {
         // console.log("new message: " + colors.yellow(message.utf8Data));
         values = message.utf8Data.split(",");
@@ -84,6 +84,7 @@ wsServer.on("request", function(request) {
   connection.on('close', function(connection) {
     if (clientName !== false) {
       console.log(colors.magenta(clientName)  + colors.red(' disconnected'));
+      console.log(" ");
       // remove client from the list of connected clients
       clients.splice(index, 1);
     }
