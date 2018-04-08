@@ -37,7 +37,11 @@ $(function() {
       yaxis = json.y;
       $("#y strong").html(yaxis);
       butt = json.k;
-      $("#k strong").html(butt);
+      if(butt === false){
+        $("#k strong").html('false');
+      }else{
+        $("#k strong").html('true');
+      }
     } else {
       console.log("Hmm..., I've never seen JSON like this:", json);
     }
