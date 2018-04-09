@@ -33,7 +33,7 @@ $(function() {
     }
 
     if (json.x) {
-      $("#espStatus").html("online").css('color','green');
+      $("#espStatus").html("sending").css('color','green');
       $("#espHeader").css('color','green');
       xaxis = json.x;
       $("#x strong").html(xaxis);
@@ -45,6 +45,8 @@ $(function() {
       }else{
         $("#k strong").html('true');
       }
+      $("#espStatus").html("offline").css('color','red');
+      $("#espHeader").css('color','red');
     } else {
       console.log("Hmm..., I've never seen JSON like this:", json);
     }
