@@ -1,15 +1,15 @@
 {
-  "name": "wsLligam",
+  "name": "lligam.grrrau.co",
   "version": "1.0.0",
   "description": "",
-  "main": "socks.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.2.1",
     "express": "^4.16.3",
     "ws": "^5.1.0"
   }
