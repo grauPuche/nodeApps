@@ -12,6 +12,7 @@ server.listen(port, function() {
   console.log(
     new Date() + " Server is listening on port " + colors.yellow(port)
   );
+  console.log(' ');
 });
 
 // create the server
