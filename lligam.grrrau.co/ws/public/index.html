@@ -3,6 +3,12 @@
 <head>
     <meta charset="utf-8">
     <style>
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
         h4 {
             color: blue;
             font-size: 90px
@@ -24,6 +30,11 @@
         hr {
             margin-bottom: 100px;
         }
+        
+        #serverHeader {
+            color: red
+        }
+
     </style>
 </head>
 
@@ -38,12 +49,12 @@
     <hr>
     <table>
         <tr>
-            <th>ESP8266</th>
+            <th id="espHeader" >ESP8266</th>
         </tr>
         <td id="espStatus">offline</td>
         </tr>
         <tr>
-            <th>SERVER</th>
+            <th id="serverHeader">SERVER</th>
         </tr>
         <td id="serverStatus">offline</td>
         </tr>

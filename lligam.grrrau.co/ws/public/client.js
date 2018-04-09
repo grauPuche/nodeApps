@@ -13,7 +13,7 @@ $(function() {
     // connection is opened and ready to use
     console.log("YAY! connection established");
     connection.send("~WEB~");
-    $("#serverStatus").html("offline");
+    $("#serverStatus").html("online").css('color','green');
   };
 
   connection.onerror = function(error) {
@@ -32,6 +32,7 @@ $(function() {
     }
 
     if (json.x) {
+      $("#espStatus").html("online").css('color','green');
       xaxis = json.x;
       $("#x strong").html(xaxis);
       yaxis = json.y;
