@@ -20,7 +20,7 @@ $(function() {
   connection.onerror = function(error) {
     // an error occurred when sending/receiving data
     console.log("connection error ma boi");
-    $("#serverStatus").html("online").css('color','red');
+    $("#serverStatus").html("offline").css('color','red');
     $("#serverHeader").css('color','red');
   };
 
