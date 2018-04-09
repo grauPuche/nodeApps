@@ -42,7 +42,7 @@ wsServer.on("request", function(request) {
     if (message.type === "utf8") {
       if (clientName === false) {
         clientName = message.utf8Data;
-        console.log(colors.magenta(clientName) + colors.green(' connected') + ', AKA ' + colors.yellow(index - 1));
+        console.log(colors.magenta(clientName) + colors.green(' connected') + ', clients array is ' + colors.yellow(clients));
         console.log(" ");
       } else if (clients[1] !== 1 ){
         // console.log("new message: " + colors.yellow(message.utf8Data));
