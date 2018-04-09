@@ -20,6 +20,8 @@ $(function() {
   connection.onerror = function(error) {
     // an error occurred when sending/receiving data
     console.log("connection error ma boi");
+    $("#serverStatus").html("online").css('color','red');
+    $("#serverHeader").css('color','red');
   };
 
   connection.onmessage = function(message) {
@@ -45,8 +47,8 @@ $(function() {
       }else{
         $("#k strong").html('true');
       }
-      $("#espStatus").html("offline").css('color','red');
-      $("#espHeader").css('color','red');
+      // $("#espStatus").html("offline").css('color','red');
+      // $("#espHeader").css('color','red');
     } else {
       console.log("Hmm..., I've never seen JSON like this:", json);
     }
