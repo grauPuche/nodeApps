@@ -48,24 +48,25 @@ wsServer.on("request", function(request) {
         // console.log("new message: " + colors.yellow(message.utf8Data));
         values = message.utf8Data.split(",");
         console.log(
-          colors.blue("X" + provisionalValueForX) +
-            colors.green(" Y" + values[0]) +
-            colors.red(" K" + values[1])
+          colors.blue("X" + values[0]) +
+            colors.green(" Y" + values[1]) +
+            colors.red(" K" + values[2])
         );
         console.log(" ");
 
         // console.log(colors.yellow(Object.keys(values)))
 
-        yaxix = parseInt(values[0], 10);
+        xaxix = parseInt(values[0], 10);
+        yaxix = parseInt(values[1], 10);
 
-        if (values[1] === "0") {
+        if (values[2] === "0") {
           butt = true;
         } else {
           butt = false;
         }
 
         var allValues = JSON.stringify({
-          x: provisionalValueForX,
+          x: xaxis,
           y: yaxix,
           k: butt
         });
