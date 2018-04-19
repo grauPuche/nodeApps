@@ -73,8 +73,8 @@ wsServer.on("request", function(request) {
 
         clients[1].sendUTF(allValues);
 
-        // console.log("just send: " + colors.yellow(allValues));
-        // console.log(" ");
+        console.log("just send: " + colors.yellow(allValues));
+        console.log(" ");
       }
     }
   });
