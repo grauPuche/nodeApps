@@ -46,7 +46,7 @@ wsServer.on("request", function(request) {
         console.log(" ");
       } else if (clients[1] !== 1 ){
         // console.log("new message: " + colors.yellow(message.utf8Data));
-        // values = message.utf8Data.split(",");
+        values = message.utf8Data.split(",");
         console.log(
           colors.blue("X" + values[0]) +
             colors.green(" Y" + values[1]) +
