@@ -45,7 +45,7 @@ wsServer.on("request", function(request) {
         console.log(colors.magenta(clientName) + colors.green(' connected') + ', clients array is ' + colors.yellow(Object.keys(clients)));
         console.log(" ");
       } else if (clients[1] !== 1 ){
-        // console.log("new message: " + colors.yellow(message.utf8Data));
+        console.log("new message: " + colors.yellow(message.utf8Data));
         values = message.utf8Data.split(",");
         console.log(
           colors.blue("X" + values[0]) +
