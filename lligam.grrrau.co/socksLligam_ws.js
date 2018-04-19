@@ -45,8 +45,8 @@ wsServer.on("request", function(request) {
         console.log(colors.magenta(clientName) + colors.green(' connected') + ', clients array is ' + colors.yellow(Object.keys(clients)));
         console.log(" ");
       } else if (clients[1] !== 1 ){
-        console.log("new message: " + colors.yellow(message.utf8Data));
-        values = message.utf8Data.split(",");
+        // console.log("new message: " + colors.yellow(message.utf8Data));
+        // values = message.utf8Data.split(",");
         console.log(
           colors.blue("X" + values[0]) +
             colors.green(" Y" + values[1]) +
@@ -73,8 +73,8 @@ wsServer.on("request", function(request) {
 
         clients[1].sendUTF(allValues);
 
-        console.log("just send: " + colors.yellow(allValues));
-        console.log(" ");
+        //console.log("just send: " + colors.yellow(allValues));
+        //console.log(" ");
       }
     }
   });
