@@ -56,8 +56,8 @@ wsServer.on("request", function(request) {
 
         // console.log(colors.yellow(Object.keys(values)))
 
-        xaxix = parseInt(values[0], 10);
-        yaxix = parseInt(values[1], 10);
+        xaxis = parseInt(values[0], 10);
+        yaxis = parseInt(values[1], 10);
 
         if (values[2] === "0") {
           butt = true;
@@ -67,7 +67,7 @@ wsServer.on("request", function(request) {
 
         var allValues = JSON.stringify({
           x: xaxis,
-          y: yaxix,
+          y: yaxis,
           k: butt
         });
 
